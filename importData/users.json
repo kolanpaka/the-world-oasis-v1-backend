@@ -1,0 +1,796 @@
+[
+  {
+    "userName": "AliceAdmin",
+    "email": "alice.admin@example.com",
+    "password": "Admin@527",
+    "role": "admin"
+  },
+  {
+    "userName": "BobAdmin",
+    "email": "bob.admin@example.com",
+    "password": "Admin@316",
+    "role": "admin"
+  },
+  {
+    "userName": "SuperAdmin1",
+    "email": "super.admin@example.com",
+    "password": "SpAdm!n9",
+    "role": "spadmin"
+  },
+  {
+    "userName": "user1",
+    "email": "user1@example.com",
+    "password": "User@101",
+    "role": "user",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  {
+    "userName": "user2",
+    "email": "user2@example.com",
+    "password": "User@102",
+    "role": "user",
+    "country": "United States",
+    "countryCode": "US"
+  },
+  {
+    "userName": "user3",
+    "email": "user3@example.com",
+    "password": "User@103",
+    "role": "user",
+    "country": "United Kingdom",
+    "countryCode": "GB"
+  },
+  {
+    "userName": "user4",
+    "email": "user4@example.com",
+    "password": "User@104",
+    "role": "user",
+    "country": "Canada",
+    "countryCode": "CA"
+  },
+  {
+    "userName": "user5",
+    "email": "user5@example.com",
+    "password": "User@105",
+    "role": "user",
+    "country": "Australia",
+    "countryCode": "AU"
+  },
+  {
+    "userName": "user6",
+    "email": "user6@example.com",
+    "password": "User@106",
+    "role": "user",
+    "country": "Germany",
+    "countryCode": "DE"
+  },
+  {
+    "userName": "user7",
+    "email": "user7@example.com",
+    "password": "User@107",
+    "role": "user",
+    "country": "France",
+    "countryCode": "FR"
+  },
+  {
+    "userName": "user8",
+    "email": "user8@example.com",
+    "password": "User@108",
+    "role": "user",
+    "country": "Japan",
+    "countryCode": "JP"
+  },
+  {
+    "userName": "user9",
+    "email": "user9@example.com",
+    "password": "User@109",
+    "role": "user",
+    "country": "China",
+    "countryCode": "CN"
+  },
+  {
+    "userName": "user10",
+    "email": "user10@example.com",
+    "password": "User@110",
+    "role": "user",
+    "country": "Brazil",
+    "countryCode": "BR"
+  },
+  {
+    "userName": "user11",
+    "email": "user11@example.com",
+    "password": "User@111",
+    "role": "user",
+    "country": "South Africa",
+    "countryCode": "ZA"
+  },
+  {
+    "userName": "user12",
+    "email": "user12@example.com",
+    "password": "User@112",
+    "role": "user",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  {
+    "userName": "user13",
+    "email": "user13@example.com",
+    "password": "User@113",
+    "role": "user",
+    "country": "Russia",
+    "countryCode": "RU"
+  },
+  {
+    "userName": "user14",
+    "email": "user14@example.com",
+    "password": "User@114",
+    "role": "user",
+    "country": "Netherlands",
+    "countryCode": "NL"
+  },
+  {
+    "userName": "user15",
+    "email": "user15@example.com",
+    "password": "User@115",
+    "role": "user",
+    "country": "Sweden",
+    "countryCode": "SE"
+  },
+  {
+    "userName": "user16",
+    "email": "user16@example.com",
+    "password": "User@116",
+    "role": "user",
+    "country": "Italy",
+    "countryCode": "IT"
+  },
+  {
+    "userName": "user17",
+    "email": "user17@example.com",
+    "password": "User@117",
+    "role": "user",
+    "country": "Spain",
+    "countryCode": "ES"
+  },
+  {
+    "userName": "user18",
+    "email": "user18@example.com",
+    "password": "User@118",
+    "role": "user",
+    "country": "Mexico",
+    "countryCode": "MX"
+  },
+  {
+    "userName": "user19",
+    "email": "user19@example.com",
+    "password": "User@119",
+    "role": "user",
+    "country": "Argentina",
+    "countryCode": "AR"
+  },
+  {
+    "userName": "user20",
+    "email": "user20@example.com",
+    "password": "User@120",
+    "role": "user",
+    "country": "New Zealand",
+    "countryCode": "NZ"
+  },
+  {
+    "userName": "user21",
+    "email": "user21@example.com",
+    "password": "User@121",
+    "role": "user",
+    "country": "Ireland",
+    "countryCode": "IE"
+  },
+  {
+    "userName": "user22",
+    "email": "user22@example.com",
+    "password": "User@122",
+    "role": "user",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  {
+    "userName": "user23",
+    "email": "user23@example.com",
+    "password": "User@123",
+    "role": "user",
+    "country": "United States",
+    "countryCode": "US"
+  },
+  {
+    "userName": "user24",
+    "email": "user24@example.com",
+    "password": "User@124",
+    "role": "user",
+    "country": "United Kingdom",
+    "countryCode": "GB"
+  },
+  {
+    "userName": "user25",
+    "email": "user25@example.com",
+    "password": "User@125",
+    "role": "user",
+    "country": "Canada",
+    "countryCode": "CA"
+  },
+  {
+    "userName": "user26",
+    "email": "user26@example.com",
+    "password": "User@126",
+    "role": "user",
+    "country": "Australia",
+    "countryCode": "AU"
+  },
+  {
+    "userName": "user27",
+    "email": "user27@example.com",
+    "password": "User@127",
+    "role": "user",
+    "country": "Germany",
+    "countryCode": "DE"
+  },
+  {
+    "userName": "user28",
+    "email": "user28@example.com",
+    "password": "User@128",
+    "role": "user",
+    "country": "France",
+    "countryCode": "FR"
+  },
+  {
+    "userName": "user29",
+    "email": "user29@example.com",
+    "password": "User@129",
+    "role": "user",
+    "country": "Japan",
+    "countryCode": "JP"
+  },
+  {
+    "userName": "user30",
+    "email": "user30@example.com",
+    "password": "User@130",
+    "role": "user",
+    "country": "China",
+    "countryCode": "CN"
+  },
+  {
+    "userName": "user31",
+    "email": "user31@example.com",
+    "password": "User@131",
+    "role": "user",
+    "country": "Brazil",
+    "countryCode": "BR"
+  },
+  {
+    "userName": "user32",
+    "email": "user32@example.com",
+    "password": "User@132",
+    "role": "user",
+    "country": "South Africa",
+    "countryCode": "ZA"
+  },
+  {
+    "userName": "user33",
+    "email": "user33@example.com",
+    "password": "User@133",
+    "role": "user",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  {
+    "userName": "user34",
+    "email": "user34@example.com",
+    "password": "User@134",
+    "role": "user",
+    "country": "Russia",
+    "countryCode": "RU"
+  },
+  {
+    "userName": "user35",
+    "email": "user35@example.com",
+    "password": "User@135",
+    "role": "user",
+    "country": "Netherlands",
+    "countryCode": "NL"
+  },
+  {
+    "userName": "user36",
+    "email": "user36@example.com",
+    "password": "User@136",
+    "role": "user",
+    "country": "Sweden",
+    "countryCode": "SE"
+  },
+  {
+    "userName": "user37",
+    "email": "user37@example.com",
+    "password": "User@137",
+    "role": "user",
+    "country": "Italy",
+    "countryCode": "IT"
+  },
+  {
+    "userName": "user38",
+    "email": "user38@example.com",
+    "password": "User@138",
+    "role": "user",
+    "country": "Spain",
+    "countryCode": "ES"
+  },
+  {
+    "userName": "user39",
+    "email": "user39@example.com",
+    "password": "User@139",
+    "role": "user",
+    "country": "Mexico",
+    "countryCode": "MX"
+  },
+  {
+    "userName": "user40",
+    "email": "user40@example.com",
+    "password": "User@140",
+    "role": "user",
+    "country": "Argentina",
+    "countryCode": "AR"
+  },
+  {
+    "userName": "user41",
+    "email": "user41@example.com",
+    "password": "User@141",
+    "role": "user",
+    "country": "New Zealand",
+    "countryCode": "NZ"
+  },
+  {
+    "userName": "user42",
+    "email": "user42@example.com",
+    "password": "User@142",
+    "role": "user",
+    "country": "Ireland",
+    "countryCode": "IE"
+  },
+  {
+    "userName": "user43",
+    "email": "user43@example.com",
+    "password": "User@143",
+    "role": "user",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  {
+    "userName": "user44",
+    "email": "user44@example.com",
+    "password": "User@144",
+    "role": "user",
+    "country": "United States",
+    "countryCode": "US"
+  },
+  {
+    "userName": "user45",
+    "email": "user45@example.com",
+    "password": "User@145",
+    "role": "user",
+    "country": "United Kingdom",
+    "countryCode": "GB"
+  },
+  {
+    "userName": "user46",
+    "email": "user46@example.com",
+    "password": "User@146",
+    "role": "user",
+    "country": "Canada",
+    "countryCode": "CA"
+  },
+  {
+    "userName": "user47",
+    "email": "user47@example.com",
+    "password": "User@147",
+    "role": "user",
+    "country": "Australia",
+    "countryCode": "AU"
+  },
+  {
+    "userName": "user48",
+    "email": "user48@example.com",
+    "password": "User@148",
+    "role": "user",
+    "country": "Germany",
+    "countryCode": "DE"
+  },
+  {
+    "userName": "user49",
+    "email": "user49@example.com",
+    "password": "User@149",
+    "role": "user",
+    "country": "France",
+    "countryCode": "FR"
+  },
+  {
+    "userName": "user50",
+    "email": "user50@example.com",
+    "password": "User@150",
+    "role": "user",
+    "country": "Japan",
+    "countryCode": "JP"
+  },
+  {
+    "userName": "user51",
+    "email": "user51@example.com",
+    "password": "User@151",
+    "role": "user",
+    "country": "China",
+    "countryCode": "CN"
+  },
+  {
+    "userName": "user52",
+    "email": "user52@example.com",
+    "password": "User@152",
+    "role": "user",
+    "country": "Brazil",
+    "countryCode": "BR"
+  },
+  {
+    "userName": "user53",
+    "email": "user53@example.com",
+    "password": "User@153",
+    "role": "user",
+    "country": "South Africa",
+    "countryCode": "ZA"
+  },
+  {
+    "userName": "user54",
+    "email": "user54@example.com",
+    "password": "User@154",
+    "role": "user",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  {
+    "userName": "user55",
+    "email": "user55@example.com",
+    "password": "User@155",
+    "role": "user",
+    "country": "Russia",
+    "countryCode": "RU"
+  },
+  {
+    "userName": "user56",
+    "email": "user56@example.com",
+    "password": "User@156",
+    "role": "user",
+    "country": "Netherlands",
+    "countryCode": "NL"
+  },
+  {
+    "userName": "user57",
+    "email": "user57@example.com",
+    "password": "User@157",
+    "role": "user",
+    "country": "Sweden",
+    "countryCode": "SE"
+  },
+  {
+    "userName": "user58",
+    "email": "user58@example.com",
+    "password": "User@158",
+    "role": "user",
+    "country": "Italy",
+    "countryCode": "IT"
+  },
+  {
+    "userName": "user59",
+    "email": "user59@example.com",
+    "password": "User@159",
+    "role": "user",
+    "country": "Spain",
+    "countryCode": "ES"
+  },
+  {
+    "userName": "user60",
+    "email": "user60@example.com",
+    "password": "User@160",
+    "role": "user",
+    "country": "Mexico",
+    "countryCode": "MX"
+  },
+  {
+    "userName": "user61",
+    "email": "user61@example.com",
+    "password": "User@161",
+    "role": "user",
+    "country": "Argentina",
+    "countryCode": "AR"
+  },
+  {
+    "userName": "user62",
+    "email": "user62@example.com",
+    "password": "User@162",
+    "role": "user",
+    "country": "New Zealand",
+    "countryCode": "NZ"
+  },
+  {
+    "userName": "user63",
+    "email": "user63@example.com",
+    "password": "User@163",
+    "role": "user",
+    "country": "Ireland",
+    "countryCode": "IE"
+  },
+  {
+    "userName": "user64",
+    "email": "user64@example.com",
+    "password": "User@164",
+    "role": "user",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  {
+    "userName": "user65",
+    "email": "user65@example.com",
+    "password": "User@165",
+    "role": "user",
+    "country": "United States",
+    "countryCode": "US"
+  },
+  {
+    "userName": "user66",
+    "email": "user66@example.com",
+    "password": "User@166",
+    "role": "user",
+    "country": "United Kingdom",
+    "countryCode": "GB"
+  },
+  {
+    "userName": "user67",
+    "email": "user67@example.com",
+    "password": "User@167",
+    "role": "user",
+    "country": "Canada",
+    "countryCode": "CA"
+  },
+  {
+    "userName": "user68",
+    "email": "user68@example.com",
+    "password": "User@168",
+    "role": "user",
+    "country": "Australia",
+    "countryCode": "AU"
+  },
+  {
+    "userName": "user69",
+    "email": "user69@example.com",
+    "password": "User@169",
+    "role": "user",
+    "country": "Germany",
+    "countryCode": "DE"
+  },
+  {
+    "userName": "user70",
+    "email": "user70@example.com",
+    "password": "User@170",
+    "role": "user",
+    "country": "France",
+    "countryCode": "FR"
+  },
+  {
+    "userName": "user71",
+    "email": "user71@example.com",
+    "password": "User@171",
+    "role": "user",
+    "country": "Japan",
+    "countryCode": "JP"
+  },
+  {
+    "userName": "user72",
+    "email": "user72@example.com",
+    "password": "User@172",
+    "role": "user",
+    "country": "China",
+    "countryCode": "CN"
+  },
+  {
+    "userName": "user73",
+    "email": "user73@example.com",
+    "password": "User@173",
+    "role": "user",
+    "country": "Brazil",
+    "countryCode": "BR"
+  },
+  {
+    "userName": "user74",
+    "email": "user74@example.com",
+    "password": "User@174",
+    "role": "user",
+    "country": "South Africa",
+    "countryCode": "ZA"
+  },
+  {
+    "userName": "user75",
+    "email": "user75@example.com",
+    "password": "User@175",
+    "role": "user",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  {
+    "userName": "user76",
+    "email": "user76@example.com",
+    "password": "User@176",
+    "role": "user",
+    "country": "Russia",
+    "countryCode": "RU"
+  },
+  {
+    "userName": "user77",
+    "email": "user77@example.com",
+    "password": "User@177",
+    "role": "user",
+    "country": "Netherlands",
+    "countryCode": "NL"
+  },
+  {
+    "userName": "user78",
+    "email": "user78@example.com",
+    "password": "User@178",
+    "role": "user",
+    "country": "Sweden",
+    "countryCode": "SE"
+  },
+  {
+    "userName": "user79",
+    "email": "user79@example.com",
+    "password": "User@179",
+    "role": "user",
+    "country": "Italy",
+    "countryCode": "IT"
+  },
+  {
+    "userName": "user80",
+    "email": "user80@example.com",
+    "password": "User@180",
+    "role": "user",
+    "country": "Spain",
+    "countryCode": "ES"
+  },
+  {
+    "userName": "user81",
+    "email": "user81@example.com",
+    "password": "User@181",
+    "role": "user",
+    "country": "Mexico",
+    "countryCode": "MX"
+  },
+  {
+    "userName": "user82",
+    "email": "user82@example.com",
+    "password": "User@182",
+    "role": "user",
+    "country": "Argentina",
+    "countryCode": "AR"
+  },
+  {
+    "userName": "user83",
+    "email": "user83@example.com",
+    "password": "User@183",
+    "role": "user",
+    "country": "New Zealand",
+    "countryCode": "NZ"
+  },
+  {
+    "userName": "user84",
+    "email": "user84@example.com",
+    "password": "User@184",
+    "role": "user",
+    "country": "Ireland",
+    "countryCode": "IE"
+  },
+  {
+    "userName": "user85",
+    "email": "user85@example.com",
+    "password": "User@185",
+    "role": "user",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  {
+    "userName": "user86",
+    "email": "user86@example.com",
+    "password": "User@186",
+    "role": "user",
+    "country": "United States",
+    "countryCode": "US"
+  },
+  {
+    "userName": "user87",
+    "email": "user87@example.com",
+    "password": "User@187",
+    "role": "user",
+    "country": "United Kingdom",
+    "countryCode": "GB"
+  },
+  {
+    "userName": "user88",
+    "email": "user88@example.com",
+    "password": "User@188",
+    "role": "user",
+    "country": "Canada",
+    "countryCode": "CA"
+  },
+  {
+    "userName": "user89",
+    "email": "user89@example.com",
+    "password": "User@189",
+    "role": "user",
+    "country": "Australia",
+    "countryCode": "AU"
+  },
+  {
+    "userName": "user90",
+    "email": "user90@example.com",
+    "password": "User@190",
+    "role": "user",
+    "country": "Germany",
+    "countryCode": "DE"
+  },
+  {
+    "userName": "user91",
+    "email": "user91@example.com",
+    "password": "User@191",
+    "role": "user",
+    "country": "France",
+    "countryCode": "FR"
+  },
+  {
+    "userName": "user92",
+    "email": "user92@example.com",
+    "password": "User@192",
+    "role": "user",
+    "country": "Japan",
+    "countryCode": "JP"
+  },
+  {
+    "userName": "user93",
+    "email": "user93@example.com",
+    "password": "User@193",
+    "role": "user",
+    "country": "China",
+    "countryCode": "CN"
+  },
+  {
+    "userName": "user94",
+    "email": "user94@example.com",
+    "password": "User@194",
+    "role": "user",
+    "country": "Brazil",
+    "countryCode": "BR"
+  },
+  {
+    "userName": "user95",
+    "email": "user95@example.com",
+    "password": "User@195",
+    "role": "user",
+    "country": "South Africa",
+    "countryCode": "ZA"
+  },
+  {
+    "userName": "user96",
+    "email": "user96@example.com",
+    "password": "User@196",
+    "role": "user",
+    "country": "Nigeria",
+    "countryCode": "NG"
+  },
+  {
+    "userName": "user97",
+    "email": "user97@example.com",
+    "password": "User@197",
+    "role": "user",
+    "country": "Russia",
+    "countryCode": "RU"
+  }
+]

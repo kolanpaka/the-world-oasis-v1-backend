@@ -1,0 +1,30 @@
+{
+  "name": "nodebasics",
+  "version": "1.0.0",
+  "description": "Learning Node js and Express Js",
+  "license": "ISC",
+  "author": "kolanpaka kalyan",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "prod": "cross-env NODE_ENV='prod' PORT=8000 nodemon server.js",
+    "dev": "cross-env NODE_ENV='dev' PORT=3000 nodemon server.js",
+    "debug-dev": "cross-env NODE_ENV='dev' PORT=3000 ndb server.js"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "ndb": "^1.1.5",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.8.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "query-to-mongo": "^0.12.1"
+  }
+}

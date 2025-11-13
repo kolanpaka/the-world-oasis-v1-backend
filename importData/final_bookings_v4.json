@@ -1,0 +1,972 @@
+[
+  {
+    "userId": "690845e62c3142f666785b34",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-10-14T00:00:00Z",
+    "endDate": "2025-10-19T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845e72c3142f666785b38",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-10-08T00:00:00Z",
+    "endDate": "2025-10-12T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845e72c3142f666785b3c",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-10-02T00:00:00Z",
+    "endDate": "2025-10-06T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845e82c3142f666785b40",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-09-27T00:00:00Z",
+    "endDate": "2025-10-01T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845e82c3142f666785b44",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-09-21T00:00:00Z",
+    "endDate": "2025-09-25T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845e92c3142f666785b48",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-09-14T00:00:00Z",
+    "endDate": "2025-09-18T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ea2c3142f666785b4c",
+    "cabinId": "68e9344b27a5cc349f65c661",
+    "startDate": "2025-11-02T00:00:00Z",
+    "endDate": "2025-11-06T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845ea2c3142f666785b50",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-10-13T00:00:00Z",
+    "endDate": "2025-10-18T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845eb2c3142f666785b54",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-10-07T00:00:00Z",
+    "endDate": "2025-10-11T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ec2c3142f666785b58",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-10-01T00:00:00Z",
+    "endDate": "2025-10-05T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ec2c3142f666785b5c",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-09-24T00:00:00Z",
+    "endDate": "2025-09-29T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ed2c3142f666785b60",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-09-18T00:00:00Z",
+    "endDate": "2025-09-23T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ee2c3142f666785b64",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-09-14T00:00:00Z",
+    "endDate": "2025-09-17T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ee2c3142f666785b68",
+    "cabinId": "68cbb2936c7dae7b9b06239a",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-06T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845ef2c3142f666785b6c",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-10-10T00:00:00Z",
+    "endDate": "2025-10-15T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845ef2c3142f666785b70",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-10-05T00:00:00Z",
+    "endDate": "2025-10-08T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f02c3142f666785b74",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-09-28T00:00:00Z",
+    "endDate": "2025-10-03T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f02c3142f666785b78",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-09-22T00:00:00Z",
+    "endDate": "2025-09-26T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f12c3142f666785b7c",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-09-14T00:00:00Z",
+    "endDate": "2025-09-19T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f22c3142f666785b80",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-09-08T00:00:00Z",
+    "endDate": "2025-09-13T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f22c3142f666785b84",
+    "cabinId": "68cbb2936c7dae7b9b06239c",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-06T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845f32c3142f666785b88",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-10-13T00:00:00Z",
+    "endDate": "2025-10-18T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f42c3142f666785b8c",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-10-05T00:00:00Z",
+    "endDate": "2025-10-10T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f42c3142f666785b90",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-09-28T00:00:00Z",
+    "endDate": "2025-10-02T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f52c3142f666785b94",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-09-21T00:00:00Z",
+    "endDate": "2025-09-26T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f52c3142f666785b98",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-09-17T00:00:00Z",
+    "endDate": "2025-09-20T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f62c3142f666785b9c",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-09-11T00:00:00Z",
+    "endDate": "2025-09-15T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f62c3142f666785ba0",
+    "cabinId": "68cbb2936c7dae7b9b06239d",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-08T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845f72c3142f666785ba4",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-10-10T00:00:00Z",
+    "endDate": "2025-10-15T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f82c3142f666785ba8",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-10-04T00:00:00Z",
+    "endDate": "2025-10-09T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f82c3142f666785bac",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-09-28T00:00:00Z",
+    "endDate": "2025-10-03T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f92c3142f666785bb0",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-09-22T00:00:00Z",
+    "endDate": "2025-09-25T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845f92c3142f666785bb4",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-09-17T00:00:00Z",
+    "endDate": "2025-09-20T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fa2c3142f666785bb8",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-09-12T00:00:00Z",
+    "endDate": "2025-09-15T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest has checked out",
+    "breakFast": false,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fa2c3142f666785bbc",
+    "cabinId": "68cbb2936c7dae7b9b06239e",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-08T00:00:00Z",
+    "noOfUsers": 5,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845fb2c3142f666785bc0",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-10-18T00:00:00Z",
+    "endDate": "2025-10-23T00:00:00Z",
+    "noOfUsers": 7,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fb2c3142f666785bc4",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-10-11T00:00:00Z",
+    "endDate": "2025-10-15T00:00:00Z",
+    "noOfUsers": 5,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fc2c3142f666785bc8",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-10-05T00:00:00Z",
+    "endDate": "2025-10-10T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fc2c3142f666785bcc",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-10-01T00:00:00Z",
+    "endDate": "2025-10-04T00:00:00Z",
+    "noOfUsers": 7,
+    "observation": "Guest has checked out",
+    "breakFast": true,
+    "status": "checked out"
+  },
+  {
+    "userId": "690845fd2c3142f666785bd0",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-11-02T00:00:00Z",
+    "endDate": "2025-11-07T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845fe2c3142f666785bd4",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-11-13T00:00:00Z",
+    "endDate": "2025-11-17T00:00:00Z",
+    "noOfUsers": 8,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690845fe2c3142f666785bd8",
+    "cabinId": "68cbb2936c7dae7b9b06239f",
+    "startDate": "2025-11-21T00:00:00Z",
+    "endDate": "2025-11-24T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690845ff2c3142f666785bdc",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-11-02T00:00:00Z",
+    "endDate": "2025-11-06T00:00:00Z",
+    "noOfUsers": 7,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690845ff2c3142f666785be0",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-11-14T00:00:00Z",
+    "endDate": "2025-11-18T00:00:00Z",
+    "noOfUsers": 9,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846002c3142f666785be4",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-11-20T00:00:00Z",
+    "endDate": "2025-11-25T00:00:00Z",
+    "noOfUsers": 3,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846012c3142f666785be8",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-11-26T00:00:00Z",
+    "endDate": "2025-12-01T00:00:00Z",
+    "noOfUsers": 5,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846012c3142f666785bec",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-12-05T00:00:00Z",
+    "endDate": "2025-12-09T00:00:00Z",
+    "noOfUsers": 10,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846022c3142f666785bf0",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-12-13T00:00:00Z",
+    "endDate": "2025-12-18T00:00:00Z",
+    "noOfUsers": 8,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846022c3142f666785bf4",
+    "cabinId": "68cbb2936c7dae7b9b0623a0",
+    "startDate": "2025-12-19T00:00:00Z",
+    "endDate": "2025-12-22T00:00:00Z",
+    "noOfUsers": 10,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846032c3142f666785bf8",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-11-01T00:00:00Z",
+    "endDate": "2025-11-04T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "690846032c3142f666785bfc",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-11-14T00:00:00Z",
+    "endDate": "2025-11-18T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846042c3142f666785c00",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-11-22T00:00:00Z",
+    "endDate": "2025-11-27T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846052c3142f666785c04",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-11-30T00:00:00Z",
+    "endDate": "2025-12-03T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846052c3142f666785c08",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-12-07T00:00:00Z",
+    "endDate": "2025-12-10T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846062c3142f666785c0c",
+    "cabinId": "68e8b96a2cb74c2905d0a97d",
+    "startDate": "2025-12-11T00:00:00Z",
+    "endDate": "2025-12-15T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846072c3142f666785c10",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-08T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690846072c3142f666785c14",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-11-17T00:00:00Z",
+    "endDate": "2025-11-21T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846082c3142f666785c18",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-11-23T00:00:00Z",
+    "endDate": "2025-11-26T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846082c3142f666785c1c",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-11-27T00:00:00Z",
+    "endDate": "2025-12-02T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846092c3142f666785c20",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-12-04T00:00:00Z",
+    "endDate": "2025-12-09T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846092c3142f666785c24",
+    "cabinId": "68e8b99a2cb74c2905d0a97f",
+    "startDate": "2025-12-11T00:00:00Z",
+    "endDate": "2025-12-16T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460a2c3142f666785c28",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-11-02T00:00:00Z",
+    "endDate": "2025-11-06T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "6908460a2c3142f666785c2c",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-11-18T00:00:00Z",
+    "endDate": "2025-11-22T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460b2c3142f666785c30",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-11-24T00:00:00Z",
+    "endDate": "2025-11-27T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460b2c3142f666785c34",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-11-28T00:00:00Z",
+    "endDate": "2025-12-03T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460c2c3142f666785c38",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-12-05T00:00:00Z",
+    "endDate": "2025-12-09T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460d2c3142f666785c3c",
+    "cabinId": "68e8bbc12cb74c2905d0a981",
+    "startDate": "2025-12-13T00:00:00Z",
+    "endDate": "2025-12-16T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460d2c3142f666785c40",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-11-01T00:00:00Z",
+    "endDate": "2025-11-04T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "6908460e2c3142f666785c44",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-11-15T00:00:00Z",
+    "endDate": "2025-11-20T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460e2c3142f666785c48",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-11-24T00:00:00Z",
+    "endDate": "2025-11-29T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460f2c3142f666785c4c",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-12-03T00:00:00Z",
+    "endDate": "2025-12-08T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908460f2c3142f666785c50",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-12-12T00:00:00Z",
+    "endDate": "2025-12-15T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846102c3142f666785c54",
+    "cabinId": "68ecd245fc104cf87d5d9bae",
+    "startDate": "2025-12-16T00:00:00Z",
+    "endDate": "2025-12-21T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846112c3142f666785c58",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-11-01T00:00:00Z",
+    "endDate": "2025-11-05T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "690846112c3142f666785c5c",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-11-18T00:00:00Z",
+    "endDate": "2025-11-23T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846122c3142f666785c60",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-11-27T00:00:00Z",
+    "endDate": "2025-11-30T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846122c3142f666785c64",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-12-04T00:00:00Z",
+    "endDate": "2025-12-07T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846132c3142f666785c68",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-12-09T00:00:00Z",
+    "endDate": "2025-12-14T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846132c3142f666785c6c",
+    "cabinId": "68ecd7da01c09fd10877211b",
+    "startDate": "2025-12-16T00:00:00Z",
+    "endDate": "2025-12-21T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846142c3142f666785c70",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-07T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "690846142c3142f666785c74",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-11-11T00:00:00Z",
+    "endDate": "2025-11-15T00:00:00Z",
+    "noOfUsers": 29,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846152c3142f666785c78",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-11-16T00:00:00Z",
+    "endDate": "2025-11-19T00:00:00Z",
+    "noOfUsers": 68,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846162c3142f666785c7c",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-11-20T00:00:00Z",
+    "endDate": "2025-11-23T00:00:00Z",
+    "noOfUsers": 42,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846162c3142f666785c80",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-11-27T00:00:00Z",
+    "endDate": "2025-12-01T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846172c3142f666785c84",
+    "cabinId": "68cbb2936c7dae7b9b06239b",
+    "startDate": "2025-12-03T00:00:00Z",
+    "endDate": "2025-12-06T00:00:00Z",
+    "noOfUsers": 22,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846182c3142f666785c88",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-11-01T00:00:00Z",
+    "endDate": "2025-11-05T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Guest currently checked in",
+    "breakFast": false,
+    "status": "checked in"
+  },
+  {
+    "userId": "690846182c3142f666785c8c",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-11-13T00:00:00Z",
+    "endDate": "2025-11-16T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "690846192c3142f666785c90",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-11-18T00:00:00Z",
+    "endDate": "2025-11-22T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461a2c3142f666785c94",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-11-25T00:00:00Z",
+    "endDate": "2025-11-28T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461a2c3142f666785c98",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-12-01T00:00:00Z",
+    "endDate": "2025-12-05T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461b2c3142f666785c9c",
+    "cabinId": "68e8e46edb1513ccc51922c5",
+    "startDate": "2025-12-08T00:00:00Z",
+    "endDate": "2025-12-11T00:00:00Z",
+    "noOfUsers": 2,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461c2c3142f666785ca0",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-11-03T00:00:00Z",
+    "endDate": "2025-11-07T00:00:00Z",
+    "noOfUsers": 1,
+    "observation": "Guest currently checked in",
+    "breakFast": true,
+    "status": "checked in"
+  },
+  {
+    "userId": "6908461c2c3142f666785ca4",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-11-14T00:00:00Z",
+    "endDate": "2025-11-19T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461d2c3142f666785ca8",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-11-22T00:00:00Z",
+    "endDate": "2025-11-27T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461e2c3142f666785cac",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-11-29T00:00:00Z",
+    "endDate": "2025-12-02T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461f2c3142f666785cb0",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-12-04T00:00:00Z",
+    "endDate": "2025-12-07T00:00:00Z",
+    "noOfUsers": 4,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": true,
+    "status": "unconfirmed"
+  },
+  {
+    "userId": "6908461f2c3142f666785cb4",
+    "cabinId": "68cbb2936c7dae7b9b062399",
+    "startDate": "2025-12-09T00:00:00Z",
+    "endDate": "2025-12-14T00:00:00Z",
+    "noOfUsers": 6,
+    "observation": "Unconfirmed booking \u2014 pending payment",
+    "breakFast": false,
+    "status": "unconfirmed"
+  }
+]

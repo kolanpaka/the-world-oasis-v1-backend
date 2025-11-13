@@ -1,0 +1,919 @@
+{
+	"info": {
+		"_postman_id": "232985e5-b2e6-44a5-a2d0-d77572fc471f",
+		"name": "the-world-oasis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28952830"
+	},
+	"item": [
+		{
+			"name": "Cabins",
+			"item": [
+				{
+					"name": "get cabin",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b"
+					},
+					"response": []
+				},
+				{
+					"name": "get all cabins",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<style type=\"text/css\">\r",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+									"    .tftable tr {background-color:#ffffff;}\r",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+									"    .tftable tr:hover {background-color:#e0ffff;}\r",
+									"</style>\r",
+									"\r",
+									"<table class=\"tftable\" border=\"1\">\r",
+									"    <tr>\r",
+									"        <th>ID</th>\r",
+									"        <th>Cabin</th>\r",
+									"        <th>Capacity</th>\r",
+									"        <th>Price</th>\r",
+									"        <th>Discount</th>\r",
+									"        <th>Description</th>\r",
+									"    </tr>\r",
+									"    \r",
+									"    {{#each response.data.cabins}}\r",
+									"        <tr>\r",
+									"            <td>{{_id}}</td>\r",
+									"            <td>{{cabin}}</td>\r",
+									"            <td>{{capacity}}</td>\r",
+									"            <td>{{price}}</td>\r",
+									"            <td>{{Discount}}</td>\r",
+									"            <td>{{description}}</td>\r",
+									"        </tr>\r",
+									"    {{/each}}\r",
+									"</table>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return {response: pm.response.json()};\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cabins",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "Discount[ne]",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Cabin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"cabin\":\"909\",\"capacity\":1,\"Discount\":90,\"price\":80,\"cabin_image\":\"https://amoeidozdmndtgzcmxdc.supabase.co/storage/v1/object/public/cabin-images/cabin-005.jpg\",\"description\":\"Enjoy a comfortable and cozy getaway with your group or family in our spacious cabin 005. Designed to accommodate up to 6 people, this cabin offers a secluded retreat in the heart of nature. Inside, the cabin features warm and inviting interiors crafted from quality wood, a living area with fireplace, and a fully-equipped kitchen. The bedrooms are comfortable and equipped with en-suite bathrooms. Step outside to your private deck and take in the natural surroundings while relaxing in your own hot tub.\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b062399"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cabin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{URL}}/cabins/691030885f4fdf6606c2cf08"
+					},
+					"response": []
+				},
+				{
+					"name": "create cabin",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cabin",
+									"value": "cabin0022",
+									"type": "text"
+								},
+								{
+									"key": "capacity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "6500",
+									"type": "text"
+								},
+								{
+									"key": "Discount",
+									"value": "800",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": " Experience a family-friendly retreat in cabin 002, featuring spacious interiors and a beautiful view of the forest. This cabin is perfect for groups, with a cozy living room, modern kitchen, and outdoor space for barbecues and relaxation.",
+									"type": "text"
+								},
+								{
+									"key": "cabin_image",
+									"type": "file",
+									"src": "/C:/D backup/js projects/ultimate-react-course-main/ultimate-react-course-main/17-the-wild-oasis/starter/data/cabins/cabin-001.jpg"
+								}
+							]
+						},
+						"url": "{{URL}}/cabins"
+					},
+					"response": []
+				},
+				{
+					"name": "update cabin instant",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cabin",
+									"value": "00989",
+									"type": "text"
+								},
+								{
+									"key": "cabin_image",
+									"type": "file",
+									"src": "/C:/D backup/js projects/ultimate-react-course-main/ultimate-react-course-main/17-the-wild-oasis/starter/data/cabins/cabin-008.jpg"
+								}
+							]
+						},
+						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "post user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"userName\": \"Kalyan\",\r\n  \"email\": \"kalyan@example.com\",\r\n  \"password\": \"Test@1234\",\r\n  \"role\": \"admin\",\r\n  \"country\": \"India\",\r\n  \"countryCode\": \"+91\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/users"
+					},
+					"response": []
+				},
+				{
+					"name": "get users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{URL}}/users/690845e42c3142f666785b28"
+					},
+					"response": []
+				},
+				{
+					"name": "get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/users/690845e42c3142f666785b28"
+					},
+					"response": []
+				},
+				{
+					"name": "patch User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "kolanupaka",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/kolan/OneDrive/Pictures/Screenshots/Screenshot 2025-06-12 215338.png"
+								}
+							]
+						},
+						"url": "{{URL}}/users/690845e42c3142f666785b28"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Sign In",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON",
+									"let res = pm.response.json();",
+									"",
+									"// Check if the token exists in res.data.token",
+									"if (res.data && res.data.token) {",
+									"    // Store the token as an environment variable named 'token'",
+									"    pm.environment.set(\"token\", res.data.token);",
+									"    console.log(\"Token saved to environment variable.\");",
+									"} else {",
+									"    console.warn(\"Token not found in response.\");",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"email\":\"spadmin@worldoasis.com\",\r\n\"password\":\"Admin2000@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/auth/signIn"
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let res = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in res.data.token\r",
+									"if (res.data && res.data.token) {\r",
+									"    // Store the token as an environment variable named 'token'\r",
+									"    pm.environment.set(\"token\", res.data.token);\r",
+									"    console.log(\"Token saved to environment variable.\");\r",
+									"} else {\r",
+									"    console.warn(\"Token not found in response.\");\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n    \"userName\": \"spadmin\",\r\n    \"email\": \"spadmin@worldoasis.com\",\r\n    \"password\": \"Admin2000@\",\r\n    \"country\": \"India\",\r\n    \"countryCode\": \"IN\",\r\n    \"profile\": \"https://randomuser.me/api/portraits/men/2.jpg\",\r\n    \"role\":\"spadmin\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/auth/signUp"
+					},
+					"response": []
+				},
+				{
+					"name": "sign Out",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{URL}}/auth/signOut"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "update Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userName",
+									"value": "spadmin",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/kolan/OneDrive/Pictures/Screenshots/Screenshot 2024-11-07 115018.png"
+								}
+							]
+						},
+						"url": "{{URL}}/account"
+					},
+					"response": []
+				},
+				{
+					"name": "update Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Parse the response body as JSON\r",
+									"let res = pm.response.json();\r",
+									"\r",
+									"// Check if the token exists in res.data.token\r",
+									"if (res.data && res.data.token) {\r",
+									"    // Store the token as an environment variable named 'token'\r",
+									"    pm.environment.set(\"token\", res.data.token);\r",
+									"    console.log(\"Token saved to environment variable.\");\r",
+									"} else {\r",
+									"    console.warn(\"Token not found in response.\");\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n   \"oldPassword\": \"Password45@\", \r\n   \"newPassword\" : \"Spadmin89@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/account/update-password"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "get settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "update settings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"minNights\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/settings"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "get Bookings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/bookings"
+					},
+					"response": []
+				},
+				{
+					"name": "get Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/bookings/6904f9b6ed98751c87ee0033?fields=-userId,-cabinId.created_at,-cabinId.capacity,-status",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings",
+								"6904f9b6ed98751c87ee0033"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "-userId,-cabinId.created_at,-cabinId.capacity,-status"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{URL}}/bookings/69045ca9835d92574095e1ce"
+					},
+					"response": []
+				},
+				{
+					"name": "create Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"{{userId}}\",\r\n  \"cabinId\": \"{{cabinId}}\",\r\n  \"startDate\": \"{{startDate}}\",\r\n  \"endDate\": \"{{endDate}}\",\r\n  \"noOfUsers\": \"{{noOfUsers}}\",\r\n  \"observation\": \"{{observation}}\",\r\n  \"breakFast\": \"{{breakFast}}\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/bookings"
+					},
+					"response": []
+				},
+				{
+					"name": "update Booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"endDate\":\"2025-10-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/bookings/6905eba77480b3a2a7e00eda"
+					},
+					"response": []
+				},
+				{
+					"name": "check-in",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{URL}}/bookings/check-in/{{id}}"
+					},
+					"response": []
+				},
+				{
+					"name": "check out",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{URL}}/bookings/check-out/{{id}}"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "My Bookings",
+			"item": [
+				{
+					"name": "my-booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/my-bookings/69045beb835d92574095e1ae"
+					},
+					"response": []
+				},
+				{
+					"name": "my-bookings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/my-bookings",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"my-bookings"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete my-booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{URL}}/my-bookings/6905bff76dad17047fdb9653"
+					},
+					"response": []
+				},
+				{
+					"name": "update my-booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"breakFast\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/my-bookings/69045beb835d92574095e1ae"
+					},
+					"response": []
+				},
+				{
+					"name": "create my-booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"cabinId\": \"68cbb2936c7dae7b9b06239b\",\r\n\"startDate\": \"2025-12-01T00:00:00.000Z\",\r\n\"endDate\": \"2025-12-11T00:00:00.000Z\",\r\n\"noOfUsers\": 3,\r\n\"observation\": \"Provide cab service on arrival\",\r\n\"breakFast\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}/my-bookings/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "getInsights",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/dashboard/7"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
