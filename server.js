@@ -22,11 +22,10 @@ const app = require("./app");
 async function startServer() {
   try {
     await connectDB();
+    const PORT = process.env.PORT || 8000;
 
-    const server = app.listen(process.env.PORT, "localhost", () => {
-      console.log(
-        `[NODE_ENV = ${process.env.NODE_ENV}] server is looking for the new requests at ${process.env.DOMAIN}:${process.env.PORT}/`
-      );
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
     });
 
     process.isDbStarted = true;

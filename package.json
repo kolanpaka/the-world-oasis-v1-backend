@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "prod": "cross-env NODE_ENV='prod' PORT=8000 nodemon server.js",
+    "prod": "cross-env NODE_ENV='prod' nodemon server.js",
     "dev": "cross-env NODE_ENV='dev' PORT=3000 nodemon server.js",
     "debug-dev": "cross-env NODE_ENV='dev' PORT=3000 ndb server.js"
   },
