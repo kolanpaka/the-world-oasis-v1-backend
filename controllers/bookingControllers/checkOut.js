@@ -10,15 +10,11 @@ async function checkOut(req, res) {
     throw new NodeError(true, "booking not found!!", 404);
   }
 
-  // if (booking.status === "checked in") {
-  //   booking.status = "checked out";
-  //   booking.paid = true;
-  //   await booking.save();
-  // }
-
-  booking.status = "checked out";
-  booking.paid = true;
-  await booking.save();
+  if (booking.status === "checked in") {
+    booking.status = "checked out";
+    booking.paid = true;
+    await booking.save();
+  }
 
   res.status(201);
   res.json({

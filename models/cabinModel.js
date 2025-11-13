@@ -53,13 +53,6 @@ const cabinSchema = new mongoose.Schema({
       message: "Description for Cabin is required",
     },
   },
-  deleteIt: {
-    type: Boolean,
-    enum: {
-      values: [true],
-      message: "Invalid status configuration",
-    },
-  },
 });
 
 cabinSchema.pre("findOneAndUpdate", async function (next) {

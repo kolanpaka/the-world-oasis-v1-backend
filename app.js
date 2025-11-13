@@ -10,6 +10,7 @@ const selfBookingRouter = require("./router/selfBookingRouter");
 const dashboardRouter = require("./router/dashboardRouter");
 const errorMiddleware = require("./middleware/errorMiddleware");
 const NodeError = require("./utils/nodeError");
+const home = require("./View/home");
 
 const app = express();
 
@@ -18,6 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Routers
+app.get("/", (req, res) => {
+  res.send(home());
+});
+
 app.use("/cabins", cabinsRouter);
 app.use("/users", userRouter);
 app.use("/auth", authenticationRouter);

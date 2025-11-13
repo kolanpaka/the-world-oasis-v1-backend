@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "232985e5-b2e6-44a5-a2d0-d77572fc471f",
 		"name": "the-world-oasis",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"description": "LIVE ON\n\n[https://the-world-oasis-v1-backend-1.onrender.com](https://the-world-oasis-v1-backend-1.onrender.com/)\n\n# 🌍 **The World Oasis — Full-Stack Cabin Booking & Management System**\n\nWelcome to **The World Oasis**, a powerful and modular cabin booking platform built for both customers and administrative teams.\n\nIt offers a smooth booking experience for users while providing advanced management tools for admins and super admins.\n\nThis app features:\n\n- Secure user authentication\n    \n- Role-based access control\n    \n- Cabin management\n    \n- Booking engine\n    \n- User self-service portal\n    \n- Admin dashboard with analytics\n    \n- System settings\n    \n- Strong booking validation rules\n    \n- Multi-facet aggregated insights\n    \n\nEvery module is designed with clarity, privacy, and reliability in mind.\n\n---\n\n# 🚀 **What This App Provides**\n\n### ✔ A complete booking system\n\nUsers can browse cabins, create reservations, manage their bookings, update their profile, and more.\n\n### ✔ Full administrative controls\n\nAdmins and Super Admins can:\n\n- Manage cabins\n    \n- Handle check-ins & check-outs\n    \n- View business insights\n    \n- Moderate user accounts\n    \n- Enforce policies & settings\n    \n\n### ✔ Real-world business features\n\nThe platform supports:\n\n- Minimum & maximum nights\n    \n- Breakfast add-on pricing\n    \n- Booking duration rules\n    \n- Capacity validation\n    \n- Overlapping booking prevention\n    \n- Automatic pricing calculations\n    \n\n---\n\n# 🧭 **How to Use This App**\n\n### 👤 **For Users**\n\n- Sign up\n    \n- Sign in\n    \n- Browse cabins\n    \n- Create bookings\n    \n- Manage all bookings in **My Bookings**\n    \n- Update profile or password\n    \n- Cancel upcoming bookings\n    \n\n### 🛠️ **For Admin**\n\n- Manage all bookings\n    \n- Check-in / Check-out guests\n    \n- View dashboard analytics\n    \n- Maintain cabin data\n    \n\n### 🏆 **For Super Admin**\n\n- Full authority over the entire system\n    \n- Manage users and roles\n    \n- Manage cabins\n    \n- Update global system settings\n    \n- Access full analytics\n    \n- Fix/adjust bookings\n    \n\n---\n\n# ✨ **Key Features**\n\n### 🔒 Role-Based Security\n\nThree permission levels:\n\n- **User** — customer-facing tools\n    \n- **Admin** — operational tools\n    \n- **Super Admin** — full control\n    \n\n### 🏘 Cabin Management\n\nSuper Admin and Admin can:\n\n- Create, update, delete cabins\n    \n- Manage cabin capacity, pricing, images, discounts\n    \n\n### 📅 Booking Engine\n\nSupports:\n\n- Start & end dates\n    \n- Guest count\n    \n- Breakfast option\n    \n- Observations/notes\n    \n\nAutomatically validates:\n\n- Date overlap\n    \n- Stay duration\n    \n- Cabin availability\n    \n- User role/activity\n    \n- Capacity limits\n    \n\n### 💰 Smart Pricing\n\nThe system auto-calculates:\n\n- Base sales\n    \n- Discount adjustments\n    \n- Breakfast charges\n    \n- Total sales\n    \n\n### 📊 Admin Dashboard\n\nOne endpoint returns all insights:\n\n- Total bookings\n    \n- Total check-ins\n    \n- Sales grouped by date\n    \n- Occupancy rate\n    \n- Stay duration summary\n    \n- Daily guest movements\n    \n\n### ⚙ System Settings\n\nSuper Admin can configure:\n\n- Minimum nights\n    \n- Maximum nights\n    \n- Breakfast price\n    \n\n### 👤 Accounts & Profiles\n\nUsers can:\n\n- Update profile\n    \n- Edit username/email\n    \n- Upload/change profile image\n    \n- Change password\n    \n- Sign out from one or all devices\n    \n\n---\n\n# 🧠 **Special Facts About This Application**\n\n### ✔ Admin & User booking routes are completely separated\n\nUsers can only access **My Bookings**, not admin booking tools.\n\n### ✔ 404 is used to hide other users' bookings\n\nEven if users try to guess booking IDs, the system hides all unauthorized resources.\n\n### ✔ Dashboard uses an efficient multi-facet aggregation pipeline\n\nAll analytics load in one fast request.\n\n### ✔ Cloudinary integration for media uploads\n\nProfile pictures and cabin images stored securely.\n\n### ✔ Clean RESTful API\n\nModules include:\n\n- `/auth`\n    \n- `/users`\n    \n- `/cabins`\n    \n- `/bookings` (admin)\n    \n- `/my-bookings` (user)\n    \n- `/settings`\n    \n- `/dashboard`\n    \n- `/account`\n    \n\n---\n\n# 🎉 **In Summary**\n\n**The World Oasis** is a fully featured, secure, business-ready cabin booking platform that delivers:\n\n- Smooth user experience\n    \n- Powerful admin controls\n    \n- Accurate analytics\n    \n- Clear role boundaries\n    \n- Strong security\n    \n- Real-world booking logic\n    \n\nBuilt with structure, scalability, and professional standards in mind.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28952830"
 	},
 	"item": [
@@ -27,13 +28,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b"
+						"url": {
+							"raw": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins",
+								"68cbb2936c7dae7b9b06239b"
+							]
+						},
+						"description": "**`GET /cabins/:cabinID`**\n\n- Returns complete information about the cabin, including its name, capacity, image, price, discount, and description.\n    \n- Requires authentication.\n    \n- Accessible to **admins**, **super admins**, and **regular users** (read-only)."
 					},
 					"response": []
 				},
@@ -91,9 +106,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -104,25 +123,9 @@
 							],
 							"path": [
 								"cabins"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "2",
-									"disabled": true
-								},
-								{
-									"key": "limit",
-									"value": "4",
-									"disabled": true
-								},
-								{
-									"key": "Discount[ne]",
-									"value": "0",
-									"disabled": true
-								}
 							]
-						}
+						},
+						"description": "# 📘 **GET /cabins – Retrieve All Cabins**\n\nThis endpoint returns a list of all cabins.  \n  \nSupports **query filters** and **sorting** for flexible retrieval.\n\n---\n\n## 🔍 **Query Parameters**\n\n---\n\n## **1\\.** **`discount`** **(optional)**\n\nFilter cabins based on discount availability.\n\n### **Available Values**\n\n| Value | Meaning |\n| --- | --- |\n| `no-discount` | Only cabins with **0% discount** |\n| `with-discount` | Only cabins **having a discount** |\n| `all` (default) | Returns **all cabins** |\n\n### **2\\.** **`sortBy`** **(optional)**\n\nSort cabins based on name, price, or capacity.\n\n### **Available Values**\n\n| Value | Sorts By | Order |\n| --- | --- | --- |\n| `name-asc` | cabin name | A → Z |\n| `name-desc` | cabin name | Z → A |\n| `regularPrice-asc` | price | low → high |\n| `regularPrice-desc` | price | high → low |\n| `maxCapacity-asc` | capacity | low → high |\n| `maxCapacity-desc` | capacity | high → low |\n\n---\n\n## 📌 **Example Requests**\n\n### **Filter cabins with discount**\n\n```\nGET /cabins?discount=with-discount\n\n ```\n\n### **Sort by price (low → high)**\n\n```\nGET /cabins?sortBy=regularPrice-asc\n\n ```\n\n### **Filter + sort**\n\n```\nGET /cabins?discount=no-discount&sortBy=name-desc\n\n ```\n\n---\n\n## 📤 **Response**\n\n- Returns an array of cabin objects.\n    \n- Each cabin includes:  \n    `cabinName`, `capacity`, `cabinImage`, `price`, `discount`, `description`."
 					},
 					"response": []
 				},
@@ -131,9 +134,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PUT",
 						"header": [],
@@ -146,7 +153,17 @@
 								}
 							}
 						},
-						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b062399"
+						"url": {
+							"raw": "{{URL}}/cabins/68cbb2936c7dae7b9b062399",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins",
+								"68cbb2936c7dae7b9b062399"
+							]
+						},
+						"description": "need to pass every parameter to update the cabin unlike patch request (IGNORE🤷)"
 					},
 					"response": []
 				},
@@ -155,13 +172,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
-						"url": "{{URL}}/cabins/691030885f4fdf6606c2cf08"
+						"url": {
+							"raw": "{{URL}}/cabins/691030885f4fdf6606c2cf08",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins",
+								"691030885f4fdf6606c2cf08"
+							]
+						},
+						"description": "# 🗑️ **Delete a Cabin**\n\n### **`DELETE /cabins/:cabinID`**\n\n---\n\n## 🚀 **Delete an Existing Cabin**\n\nDeletes a cabin permanently from the system.\n\nThis action is restricted to **Admins** and **Super Admins** only.\n\nAuthentication is **required**.\n\n---\n\n## 🔐 **Permissions**\n\n| Role | Access |\n| --- | --- |\n| Admin | ✔ Can delete cabin |\n| Super Admin | ✔ Can delete cabin |\n| Regular User | ❌ Cannot delete cabin |\n\n---\n\n## 📥 **Request Parameters**\n\n### **Path Parameter**\n\n| Name | Type | Description |\n| --- | --- | --- |\n| `cabinID` | String | ID of the cabin to delete |\n\n---\n\n## 📌 **Example Request**\n\n```\nDELETE /cabins/691030885f4fdf6606c2cf08\n\n ```"
 					},
 					"response": []
 				},
@@ -173,9 +204,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [
@@ -220,7 +255,16 @@
 								}
 							]
 						},
-						"url": "{{URL}}/cabins"
+						"url": {
+							"raw": "{{URL}}/cabins",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins"
+							]
+						},
+						"description": "# 🏡 **Create a New Cabin**\n\n### **`POST /cabins`**\n\n---\n\n## ✨ **Create Cabin**\n\nThis endpoint allows **Admins** and **Super Admins** to create a new cabin in the system.  \n  \nRegular users **cannot** create cabins.  \n  \nAuthentication is **mandatory**.\n\n---\n\n## 🔐 **Permissions**\n\n| Role | Access |\n| --- | --- |\n| Admin | ✔ Can create cabin |\n| Super Admin | ✔ Can create cabin |\n| Regular User | ❌ Cannot create cabin |\n\n---\n\n## 📥 **Required Request Body**\n\nThe request should contain all essential cabin details.\n\n| Field | Type | Required | Description |\n| --- | --- | --- | --- |\n| `cabinName` | String | Yes | Name/title of the cabin |\n| `capacity` | Number | Yes | Maximum number of guests |\n| `price` | Number | Yes | Regular price of the cabin |\n| `discount` | Number | Yes | Discount price (0 if none) |\n| `description` | String | Yes | Full cabin details |\n| `cabinImage` | File | Yes | Image file (handled via Multer + Cloudinary) |\n\n---\n\n## 📌 **Request Example (Form-Data)**\n\n**Content-Type:** `multipart/form-data`\n\n| Key | Value (Example) | Type |\n| --- | --- | --- |\n| cabinName | \"Luxury Lake View Cabin\" | Text |\n| capacity | 4 | Text |\n| price | 6800 | Text |\n| discount | 5 | Text |\n| description | \"Beautiful cabin beside the lake\" | Text |\n| cabinImage | (upload file) | File |\n\n---\n\n## 📤 **Example Success Response (201 Created)**\n\n```\n{\n  \"status\": \"success\",\n  \"message\": \"Cabin created successfully\",\n  \"data\": {\n    \"_id\": \"68ccb8f86a49e55fb3f91b23\",\n    \"cabinName\": \"Luxury Lake View Cabin\",\n    \"capacity\": 4,\n    \"price\": 6800,\n    \"discount\": 5,\n    \"description\": \"Beautiful cabin beside the lake\",\n    \"cabinImage\": \"https://res.cloudinary.com/.../lakeview.jpg\"\n  }\n}\n\n ```\n\n---"
 					},
 					"response": []
 				},
@@ -229,9 +273,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -250,11 +298,22 @@
 								}
 							]
 						},
-						"url": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b"
+						"url": {
+							"raw": "{{URL}}/cabins/68cbb2936c7dae7b9b06239b",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cabins",
+								"68cbb2936c7dae7b9b06239b"
+							]
+						},
+						"description": "### **Update a Cabin**\n\n**`PATCH /cabins/:cabinID`**\n\n---\n\n# 🛠️ **Update an Existing Cabin**\n\n### **Endpoint**\n\n**`PATCH /cabins/:cabinID`**\n\nUpdates the details of an existing cabin.\n\nOnly **Admin** and **Super Admin** roles are allowed to perform this action.\n\nAuthentication is **required**.\n\n---\n\n## 🔐 **Permissions**\n\n| Role | Access |\n| --- | --- |\n| Admin | ✔ Can update cabin |\n| Super Admin | ✔ Can update cabin |\n| Regular User | ❌ Cannot update cabin |\n\n---\n\n## 📥 **Request Parameters**\n\n### **Path Parameter**\n\n| Name | Type | Description |\n| --- | --- | --- |\n| `cabinID` | String | The ID of the cabin you want to update |\n\n---\n\n## 📝 **Request Body (Any of the following fields)**\n\nSend only the fields you want to update.\n\n| Field | Type | Description |\n| --- | --- | --- |\n| `cabinName` | String | Name/title of the cabin |\n| `capacity` | Number | Maximum occupancy |\n| `price` | Number | Regular price of the cabin |\n| `discount` | Number | Discount on the price |\n| `description` | String | Detailed cabin information |\n| `cabinImage` | File/URL | New cabin image (if updating image) |\n\n---\n\n## 📌 **Example Request**\n\n```\nPATCH /cabins/68cbb2936c7dae7b9b062399\nContent-Type: application/json\n{\n  \"cabinName\": \"Luxury Forest Retreat\",\n  \"capacity\": 4,\n  \"price\": 7500,\n  \"discount\": 10,\n  \"description\": \"A premium cabin located deep inside the forest with modern amenities.\"\n}\n\n ```\n\n---\n\n## 📤 **Example Success Response (200 OK)**\n\n``` json\n{\n  \"status\": \"success\",\n  \"message\": \"Cabin updated successfully\",\n  \"data\": {\n    \"_id\": \"68cbb2936c7dae7b9b062399\",\n    \"cabinName\": \"Luxury Forest Retreat\",\n    \"capacity\": 4,\n    \"price\": 7500,\n    \"discount\": 10,\n    \"description\": \"A premium cabin located deep inside the forest with modern amenities.\",\n    \"cabinImage\": \"https://res.cloudinary.com/.../updatedImage.jpg\"\n  }\n}\n\n ```\n\n---\n\n## ❗ **Error Responses**\n\n| Status | Meaning | Reason |\n| --- | --- | --- |\n| 400 | Bad Request | Invalid body data |\n| 401 | Unauthorized | Missing/invalid token |\n| 403 | Forbidden | User is not admin/super admin |\n| 404 | Not Found | Cabin not found for the given ID |\n\n---"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "### **Cabins Module Overview**\n\n<img src=\"https://content.pstmn.io/265c2b9d-e020-4d89-b1ba-69d3b203e962/Y2FiaW4tMDAxLmpwZw==\">\n\nIn **The World Oasis** project, cabins represent individual accommodation units available for users to browse and book. Each cabin is stored as a structured resource containing essential information that helps users understand its features and suitability.\n\n#### **Cabin Attributes**\n\nA cabin includes the following key fields:\n\n- **cabinName** — The name or title of the cabin.\n    \n- **capacity** — The maximum number of guests the cabin can accommodate.\n    \n- **cabinImage** — A representative image of the cabin (stored via Cloudinary or similar).\n    \n- **price** — The base price for booking the cabin.\n    \n- **discount** — Any applicable discount on the cabin price.\n    \n- **description** — A detailed explanation outlining the cabin's features, ambiance, amenities, and suitability.\n    \n\nThese fields together represent the complete structure of a cabin resource.\n\n---\n\n### **Access Control & Permissions**\n\nTo maintain system integrity and ensure proper management:\n\n- **Admins and Super Admins**\n    \n    - Can **create**, **update**, and **delete** cabins.\n        \n    - Have full access to cabin management endpoints.\n        \n- **Regular Users**\n    \n    - Can **only read** cabin data.\n        \n    - No permission to create, modify, or delete cabins.\n        \n\n---\n\n### **Authentication**\n\nAuthentication is **mandatory** for accessing any cabin-related operations.\n\n- Admin/Super Admin privileges are required for write operations.\n    \n- Authenticated users can perform read-only actions."
 		},
 		{
 			"name": "users",
@@ -264,9 +323,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [
@@ -285,7 +348,16 @@
 								}
 							}
 						},
-						"url": "{{URL}}/users"
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "StartFragment\n\n# 📝 **Create User — How It Works**\n\nThe **POST /users** endpoint is used to create a new user account within the system.  \n  \nThis operation is protected and restricted based on user roles.\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Super Admin (spadmin)**\n\nSuper Admins have the highest level of permission. They can:\n\n- Create **any type** of user (user, admin, or super admin)\n    \n\n### ✅ **Admin**\n\nAdmins can also create users, but with restrictions:\n\n- They **can create**:\n    \n    - regular users\n        \n    - admin users\n        \n- They **cannot create**:\n    \n    - **super admin (spadmin)** users  \n          \n        This is blocked to prevent privilege escalation.\n        \n\n### ❌ **Regular Users**\n\nRegular users cannot create new accounts and do not have access to this endpoint.\n\n---\n\n# 🔐 **Why the Restriction Exists**\n\nCreating a **super admin** is a highly sensitive action.  \n  \nAdmins are not allowed to assign that role, because it would give them:\n\n- Full system control\n    \n- Access to every user\n    \n- Ability to delete admins\n    \n- Permission to modify restricted records\n    \n\nOnly an existing **super admin** can create another super admin.  \n  \nThis prevents misuse of power and keeps the system secure.\n\n---\n\n# 🚀 **How to Use This Endpoint**\n\n### 1\\. **Send a POST request to:**\n\n```\nPOST /users\n\n ```\n\n### 2\\. **Include a valid authentication token**\n\nThe sender must be an **admin** or **super admin**.\n\n### 3\\. **Provide user details in JSON format**\n\n```\n{\n  \"userName\": \"Kavya Reddy\",\n  \"email\": \"kavya@example.com\",\n  \"password\": \"StrongPass@123\",\n  \"role\": \"user\",\n  \"country\": \"India\",\n  \"countryCode\": \"+91\"\n}\n\n ```\n\n### **Note:**\n\nA default profile image is assigned automatically . profile can be edited after sigin in into the account or spadmin can edit through patch request\n\n---\n\n# ⚠️ **What Admin Is** _**Not**_ **Allowed to Do**\n\n| Action | Admin Allowed? | Super Admin Allowed? |\n| --- | --- | --- |\n| Create regular user | ✔ | ✔ |\n| Create admin user | ✔ | ✔ |\n| **Create super admin user** | ❌ Not Allowed | ✔ Allowed |\n| Access full user list | ❌ Not Allowed | ✔ Allowed |\n| Update/Delete users | ❌ Not Allowed | ✔ Allowed |\n\nEndFragment"
 					},
 					"response": []
 				},
@@ -294,13 +366,26 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/users"
+						"url": {
+							"raw": "{{URL}}/users",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users"
+							]
+						},
+						"description": "# 📘 **Get All Users — How It Works**\n\nThe **GET /users** endpoint retrieves a complete list of all users in the system.  \n  \nBecause this data is highly sensitive, access to this endpoint is **strictly restricted**.\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Super Admin (spadmin)**\n\nSuper Admins have full access to system-wide data.  \n  \nThey can use this endpoint to:\n\n- View all users\n    \n- Audit user accounts\n    \n- Manage roles and permissions\n    \n- Monitor system activity\n    \n\n### ❌ **Admin**\n\nAdmins **cannot** access this endpoint.  \n  \nThey do not have permission to view the full user list.\n\nReasons why:\n\n- It exposes all users' details (email, role, etc.)\n    \n- It gives too much visibility into system structure\n    \n- It could compromise security if misused\n    \n\n### ❌ **Regular Users**\n\nRegular users cannot access this endpoint under any circumstances.\n\n---\n\n# 🔐 **Why This Restriction Exists**\n\nViewing the full user list is considered a **privileged system operation**.  \n  \nAllowing admins to see every single user could lead to:\n\n- Unauthorized monitoring\n    \n- Accessing sensitive data\n    \n- Role misuse\n    \n- Security risks\n    \n\nTherefore, only **super admins** have the visibility required for full system oversight.\n\n---\n\n# 🚀 **How to Use This Endpoint**\n\n### 1\\. **Send a GET request to:**\n\n```\nGET /users\n\n ```\n\n### 2\\. **Attach a valid authentication token**\n\nOnly **super admins** will be authorized.\n\n### 3\\. **Response will include:**\n\n- Count of users\n    \n- List of all user profiles with basic details\n    \n- Useful for system monitoring and user management\n    \n\nExample format:\n\n```\n{\n  \"status\": \"success\",\n  \"results\": 4,\n  \"data\": [\n    {\n      \"_id\": \"68d12...\",\n      \"userName\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"role\": \"user\"\n    }\n  ]\n}\n\n ```\n\n---\n\n# 🚫 **What Admins Cannot Do**\n\n| Action | Admin Allowed? | Super Admin Allowed? |\n| --- | --- | --- |\n| Get all users | ❌ Not Allowed | ✔ Allowed |\n| Get a single user | ❌ Not Allowed | ✔ Allowed |\n| View sensitive user details | ❌ Not Allowed | ✔ Allowed |\n\nAdmins can **create users**, but they **cannot read user data**."
 					},
 					"response": []
 				},
@@ -309,13 +394,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
-						"url": "{{URL}}/users/690845e42c3142f666785b28"
+						"url": {
+							"raw": "{{URL}}/users/690845e42c3142f666785b28",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"690845e42c3142f666785b28"
+							]
+						},
+						"description": "# 🗑️ **Delete User — Summary**\n\n### **Endpoint**\n\n```\nDELETE /users/:id\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- **Only Super Admin (spadmin)**  \n      \n    No other role has permission to delete a user.\n    \n\n### **Purpose**\n\nThis route permanently removes a user account from the system.  \n  \nIt is used for administrative cleanup, removing unwanted accounts, or handling misuse cases.\n\n### **Why It Is Restricted**\n\nDeleting a user is a **high-impact action** because it:\n\n- Removes access for that person\n    \n- Deletes their account data\n    \n- Cannot be undone\n    \n- Could cause security issues if misused\n    \n\nTherefore, **admins cannot delete users**, and **regular users never have access** to this route.\n\n### **How to Use**\n\nSend a DELETE request containing the user’s ID:\n\n```\nDELETE /users/68d1234ab4e59c22bc109f77\nAuthorization: Bearer <super-admin-token>\n\n ```\n\n### **Successful Outcome**\n\nYou receive a confirmation that the user was removed:\n\n```\n{\n  \"status\": \"success\",\n  \"message\": \"User deleted successfully\"\n}\n\n ```\n\n### **When It Fails**\n\n- Invalid or missing token\n    \n- The requester is not a super admin\n    \n- User ID does not exist"
 					},
 					"response": []
 				},
@@ -324,13 +423,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/users/690845e42c3142f666785b28"
+						"url": {
+							"raw": "{{URL}}/users/690845e42c3142f666785b28",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"690845e42c3142f666785b28"
+							]
+						},
+						"description": "# 👤 **Get User — Summary**\n\n### **Endpoint**\n\n```\nGET /users/:id\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- **Only Super Admin (spadmin)**  \n      \n    No other role is allowed to retrieve another user’s full details.\n    \n\n### **Purpose**\n\nThis route is used to **view detailed information about a specific user**.  \n  \nSuper Admins use it for:\n\n- Reviewing an account\n    \n- Validating user roles\n    \n- Checking user activity or profile data\n    \n- Administrative investigations\n    \n\n### **Why It Is Restricted**\n\nAccessing an individual user's full information is sensitive because it may reveal:\n\n- Email address\n    \n- Role and permissions\n    \n- Profile details\n    \n\nAllowing admins or regular users to access this data could cause:\n\n- Privacy violations\n    \n- Unauthorized monitoring\n    \n- Security risks\n    \n\nTherefore, **only a super admin** can access this route.\n\n### **How to Use**\n\nSend a GET request with the user’s ID:\n\n```\nGET /users/68d1234ab4e59c22bc109f77\nAuthorization: Bearer <super-admin-token>\n\n ```\n\n### **Successful Outcome**\n\nYou receive the full user object:\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"user\": {\n      \"_id\": \"68d1234ab4e59c22bc109f77\",\n      \"userName\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"role\": \"user\",\n      \"country\": \"India\",\n      \"countryCode\": \"+91\",\n      \"profile\": \"https://cloudinary.com/default.jpg\"\n    }\n  }\n}\n\n ```\n\n### **When It Fails**\n\n- Missing or invalid authentication token\n    \n- User is not a super admin\n    \n- User with the given ID does not exist\n    \n\nEndFragment"
 					},
 					"response": []
 				},
@@ -339,9 +452,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -360,11 +477,22 @@
 								}
 							]
 						},
-						"url": "{{URL}}/users/690845e42c3142f666785b28"
+						"url": {
+							"raw": "{{URL}}/users/690845e42c3142f666785b28",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"users",
+								"690845e42c3142f666785b28"
+							]
+						},
+						"description": "# 🛠️ **Update User — Summary**\n\n### **Endpoint**\n\n```\nPATCH /users/:id\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- **Only Super Admin (spadmin)**  \n      \n    No other role is allowed to update user details or user profile images.\n    \n\n---\n\n### **Purpose**\n\nThis route allows a super admin to **modify user information**, including:\n\n- Basic fields (name, email, country, role, etc.)\n    \n- **Profile image** (uploaded through form-data as `profile`)\n    \n\nIt is used for administrative corrections, account management, and updating user records.\n\n---\n\n### **Why It Is Restricted**\n\nUpdating user details is sensitive because it can:\n\n- Change a user’s role\n    \n- Update personal identity information\n    \n- Replace the profile image\n    \n- Impact permissions and access levels\n    \n\nTo prevent misuse, **admins and regular users cannot update any user**.\n\nOnly super admins have the authority to perform such high-privilege operations.\n\n---\n\n### **How to Use**\n\nSend a `PATCH` request with **only the fields you want to update**.\n\n### **For updating profile image**\n\nUse **form-data** and upload a file under the key `\"profile\"`:\n\n```\nPATCH /users/690845e42c3142f666785b28\nAuthorization: Bearer <super-admin-token>\nContent-Type: multipart/form-data\n\n ```\n\n| Key | Value | Type |\n| --- | --- | --- |\n| profile | (upload image file) | File |\n\n### **For updating normal fields**\n\nUse JSON:\n\n```\n{\n  \"userName\": \"Updated Name\",\n  \"country\": \"USA\"\n}\n\n ```\n\n---\n\n### **Successful Outcome**\n\nYou receive a confirmation with the updated user object:\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"user\": {\n      \"_id\": \"690845e42c3142f666785b28\",\n      \"userName\": \"Updated Name\",\n      \"profile\": \"https://cloudinary.com/.../new-image.jpg\"\n    }\n  }\n}\n\n ```\n\n---\n\n### **When It Fails**\n\n- Missing or invalid token\n    \n- Trying to update without super admin role\n    \n- Invalid or unsupported fields\n    \n- User ID not found"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# 👤 **Users Module – Overview**\n\nThe **Users Module** manages all user accounts within _The World Oasis_ system.\n\nAll routes in this module are **protected**, meaning authentication is required before accessing any user-related operations.\n\nThis module controls how users are created, updated, retrieved, and removed. It also applies strict role-based access rules to ensure that only authorized personnel can manage sensitive user information.\n\n### **Role-Based Access Control**\n\n- **Super Admin (spadmin)** has full control over all user operations.\n    \n    They can create new users, view all users, update user details, delete accounts, and fetch individual user information.\n    \n- **Admin** users have limited permissions.\n    \n    They are allowed to create new users, but **cannot** view the full user list, view individual user details, update users, or delete users.\n    \n- **Regular Users** (normal users) do not have access to any user management operations.\n    \n\n### **Profile Image Handling**\n\nThe module uses **Multer (memory storage)** to accept profile image uploads, which are then processed and uploaded directly to Cloudinary from memory buffers. This avoids saving temporary files on the server.\n\n### **Security Enforcement**\n\nAll incoming requests first pass through:\n\n- **Authentication middleware** – verifies the user’s login token.\n    \n- **Authorization middleware** – ensures the user's role matches the required permission level.\n    \n\nThis structured security approach ensures that sensitive user operations are tightly controlled and safe from unauthorized access"
 		},
 		{
 			"name": "Authentication",
@@ -417,7 +545,17 @@
 								}
 							}
 						},
-						"url": "{{URL}}/auth/signIn"
+						"url": {
+							"raw": "{{URL}}/auth/signIn",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"signIn"
+							]
+						},
+						"description": "StartFragment\n\n# 🔐 **Sign In**\n\n### **Endpoint**\n\n```\nPOST /auth/signIn\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- **Anyone** can use this route.\n    \n- **No authentication token is required**, because this endpoint is used to _obtain_ a token.\n    \n\nThis is the entry point for users to log into the system.\n\n---\n\n# 🎯 **Purpose**\n\nThe Sign In route verifies user credentials (email + password).  \n  \nIf the credentials are valid, the system returns:\n\n- The authenticated user’s basic information\n    \n- An authentication token (JWT or equivalent)\n    \n\nThis token is required to access all protected routes in the application.\n\n---\n\n# 🛠️ **How to Use**\n\n### **Send a POST request to:**\n\n```\nPOST /auth/signIn\n\n ```\n\n### **Request Body**\n\n```\n{\n  \"email\": \"john@example.com\",\n  \"password\": \"YourPassword123!\"\n}\n\n ```\n\n### **Expected Behavior**\n\n- If the email and password match an existing user → login succeeds.\n    \n- If they do not match → login fails with an error.\n    \n\n---\n\n# 📤 **Successful Outcome**\n\nYou receive:\n\n1. A login success message\n    \n2. The user object\n    \n3. A token to be used for future requests\n    \n\nExample:\n\n```\n{\n  \"status\": \"success\",\n  \"token\": \"<your-auth-token>\",\n  \"data\": {\n    \"user\": {\n      \"_id\": \"68d...\",\n      \"userName\": \"John Doe\",\n      \"email\": \"john@example.com\",\n      \"role\": \"user\",\n      \"country\": \"India\",\n      \"profile\": \"https://cloudinary.com/.../default.jpg\"\n    }\n  }\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n- Invalid email\n    \n- Wrong password\n    \n- Account inactive\n    \n- Required fields missing\n    \n\nExample error:\n\n```\n{\n  \"status\": \"fail\",\n  \"message\": \"Invalid email or password\"\n}\n\n ```\n\nEndFragment"
 					},
 					"response": []
 				},
@@ -458,7 +596,17 @@
 								}
 							}
 						},
-						"url": "{{URL}}/auth/signUp"
+						"url": {
+							"raw": "{{URL}}/auth/signUp",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"signUp"
+							]
+						},
+						"description": "# 📝 **Sign Up**\n\n### **Endpoint**\n\n```\nPOST /auth/signUp\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- Anyone can register using this route.\n    \n- No authentication token is required.\n    \n\n---\n\n# 🎯 **Purpose**\n\nThis route allows a new user to create an account.  \n  \nAll required fields are validated, the password is securely encrypted, and the account is created with safe defaults.\n\n---\n\n# 📥 **Required Fields**\n\nThe request body must include:\n\n| Field | Type | Description |\n| --- | --- | --- |\n| **userName** | String | Unique username for the account |\n| **email** | String | Valid email address |\n| **password** | String | Must follow password rules (complexity required) |\n| **country** | String | User’s country |\n| **countryCode** | String | User’s country code |\n\n---\n\n# 🔐 **Role Behavior**\n\n### **The role is always set to** **`\"user\"`** **automatically.**\n\nAny value provided by the client (like `\"admin\"` or `\"spadmin\"`) is **ignored**.\n\nThis ensures:\n\n- No one can create privilege-escalated accounts through sign-up\n    \n- Security and access control remain consistent\n    \n- Elevated roles can only be assigned by Super Admins through authorized routes\n    \n\n---\n\n# 🖼️ **Profile Behavior**\n\n- No profile field is required.\n    \n- A **default profile image** is assigned automatically.\n    \n\n---\n\n# 📤 **Expected Outcome**\n\n- The system validates all input.\n    \n- The password is encrypted.\n    \n- The new user account is created with:\n    \n    - `role = \"user\"` (forced)\n        \n    - Default profile image\n        \n    - Active status\n        \n\nA success response is returned, usually with a token and the created user object."
 					},
 					"response": []
 				},
@@ -467,13 +615,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
-						"url": "{{URL}}/auth/signOut"
+						"url": {
+							"raw": "{{URL}}/auth/signOut",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"signOut"
+							]
+						},
+						"description": "# 🔐 **Sign Out — Summary**\n\n### **Endpoint**\n\n```\nPOST /auth/signOut\n\n ```\n\n### **Who Can Use This Endpoint?**\n\n- Any **authenticated user**.\n    \n- A valid token is required because the system needs to identify **which session** to sign out from.\n    \n\n---\n\n# 🎯 **Purpose**\n\nThis route logs the user out **only from the current device/session** they are using.\n\nIt does **not** log out the user from other devices or sessions.\n\nThis ensures:\n\n- Users can sign out safely from one device\n    \n- Ongoing sessions on other devices remain active\n    \n- Security is maintained for multi-device usage\n    \n\n---\n\n# 🛠️ **How It Works**\n\nWhen the user sends a sign-out request with a valid token:\n\n- The system identifies the session linked to that token\n    \n- That specific session is **invalidated / removed / deactivated**\n    \n- All other active sessions for the same user remain untouched\n    \n\nThis is ideal for:\n\n- Mobile + Web multi-login\n    \n- Controlled session management\n    \n- Logging out stolen or compromised session\n    \n\n---\n\n# 📥 **Request Requirements**\n\n- Must include a valid **authentication token** in the request header:\n    \n\n```\nAuthorization: Bearer <token>\n\n ```\n\nThere is **no request body** required for sign-out.\n\n---\n\n# 📤 **Expected Outcome**\n\nA simple confirmation message:\n\n```\n{\n  \"status\": \"success\",\n  \"message\": \"Signed out successfully from this device.\"\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n- Missing token → user is not authenticated\n    \n- Invalid/expired token → session can’t be found\n    \n- Session already revoked\n    \n\nError example:\n\n```\n{\n  \"status\": \"fail\",\n  \"message\": \"Invalid or expired session.\"\n}\n\n ```"
 					},
 					"response": []
 				}
@@ -487,9 +649,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [
@@ -514,7 +680,16 @@
 								}
 							]
 						},
-						"url": "{{URL}}/account"
+						"url": {
+							"raw": "{{URL}}/account",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"account"
+							]
+						},
+						"description": "# 🛠️ **Update My Account**\n\n### **Endpoint**\n\n```\nPATCH /account\n\n ```\n\n---\n\n# 👤 **Purpose**\n\nThis route allows an authenticated user to **update their own general account details**, including their **profile image**.  \n  \nIt is strictly for **self-updates only**, meaning users can only modify their own account and not anyone else’s.\n\nThis endpoint **does NOT handle password changes**.  \n  \nPassword updates are handled by a separate route.\n\n---\n\n# 🧩 **What You Can Update**\n\nUsers can modify the following fields:\n\n| Field | Description |\n| --- | --- |\n| **userName** | Update your display username |\n| **email** | Update your email address |\n| **country** | Update your country |\n| **countryCode** | Update your country code |\n| **profile** | Update your profile image (via file upload) |\n\n### **Profile Image Upload**\n\nTo update the profile image, use:\n\n```\nContent-Type: multipart/form-data\n\n ```\n\nwith a file under the key:\n\n```\nprofile\n\n ```\n\n---\n\n# 🔐 **Who Can Access This Route?**\n\n- **Any authenticated user** (regular user, admin, super admin)\n    \n- Applies **only to their own account**\n    \n- No one can update someone else’s account through this route\n    \n\n---\n\n# 🚫 **What This Route Cannot Do**\n\n- Cannot update **password**\n    \n- Cannot update **role**\n    \n- Cannot update **status**\n    \n- Cannot update **other users**\n    \n- Cannot modify system-level fields\n    \n\nThese actions belong to other endpoints (`/users`, `/account/updatePassword`, etc.).\n\n---\n\n# 🧭 **How to Use**\n\n### **Option 1 — Update text fields**\n\n```\nPATCH /account\nAuthorization: Bearer <token>\nContent-Type: application/json\n\n ```\n\nBody:\n\n```\n{\n  \"userName\": \"NewName\",\n  \"email\": \"new@example.com\",\n  \"country\": \"USA\",\n  \"countryCode\": \"+1\"\n}\n\n ```\n\n### **Option 2 — Update profile image**\n\n```\nPATCH /account\nAuthorization: Bearer <token>\nContent-Type: multipart/form-data\n\n ```\n\nForm-data:\n\n- `profile` → (upload image file)\n    \n\n---\n\n# 📤 **Expected Outcome**\n\n- User information is updated\n    \n- Profile image is replaced if provided\n    \n- Response includes updated user details\n    \n\n---\n\n# ❗ **When It Fails**\n\n- Missing/invalid authentication\n    \n- Email or username already in use\n    \n- Invalid data\n    \n- Uploaded file not supported\n    \n- Attempt to update restricted fields"
 					},
 					"response": []
 				},
@@ -546,9 +721,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -561,11 +740,22 @@
 								}
 							}
 						},
-						"url": "{{URL}}/account/update-password"
+						"url": {
+							"raw": "{{URL}}/account/update-password",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"account",
+								"update-password"
+							]
+						},
+						"description": "# 🔐 **Sign Out From All Devices**\n\n### **Endpoint**\n\n```\nPOST /auth/signOut-all\n\n ```\n\n---\n\n# 🎯 **Purpose**\n\nThis route logs the user out from **every active session across all devices**, ensuring that all previously issued tokens are invalidated.\n\nAfter clearing all sessions, the system immediately generates and returns **a new token for the current active request**, so the user stays logged in on the device that triggered the action.\n\nThis is extremely useful for:\n\n- Securing the account after password changes\n    \n- Cutting off unauthorized access\n    \n- Resetting all sessions while keeping the current device active\n    \n\n---\n\n# 🔐 **Who Can Use This Endpoint?**\n\n- **Any authenticated user** can trigger a full session reset.\n    \n- Applies equally to regular users, admins, and super admins.\n    \n\n---\n\n# 🛠️ **How It Works**\n\n1. The system identifies the user from the provided token.\n    \n2. It clears **all existing sessions/tokens** for that user.\n    \n3. It immediately creates **a brand new session**.\n    \n4. A fresh authentication token is returned in the response.\n    \n\nAll other devices, browsers, and sessions are logged out.\n\n---\n\n# 📥 **Request Requirements**\n\n```\nAuthorization: Bearer <current-token>\n\n ```\n\nNo request body is required.\n\n---\n\n# 📤 **Expected Outcome**\n\nA confirmation message along with a **newly issued token**:\n\n```\n{\n  \"status\": \"success\",\n  \"message\": \"Signed out from all devices. A new session has been created.\",\n  \"token\": \"<newly-issued-token>\"\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n- Missing or invalid token\n    \n- Session not found\n    \n- User not authenticated\n    \n- Internal session clearing issues\n    \n\nFailure example:\n\n```\n{\n  \"status\": \"fail\",\n  \"message\": \"Unable to reset sessions.\"\n}\n\n ```"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# 🧾 **Account Module**\n\nThe **Account Module** is designed specifically for **self-service account management**.  \n  \nIt allows an authenticated user to update **their own profile information** and **change their password** without involving admins or super admins.\n\nThis module does **not** allow users to modify other users’ data.\n\n---\n\n## 👤 **What This Module Is For**\n\nThe account module handles:\n\n### **1\\. Updating your own account details**\n\nThis may include changes to:\n\n- userName\n    \n- country\n    \n- countryCode\n    \n- profile image\n    \n- other personal fields that are safe for self-updates\n    \n\n### **2\\. Updating your own password**\n\nA secure, dedicated route for:\n\n- entering current password\n    \n- validating it\n    \n- setting a new password\n    \n\nBoth operations follow strict security rules to protect user identity and login access.\n\n---\n\n## 🔐 **Who Can Use Account Routes?**\n\n- **Any authenticated user**  \n      \n    Each user can update only **their own data**.\n    \n- **Admins and super admins are treated like normal users here**  \n      \n    Even a super admin can only update **their own account** from this module.  \n      \n    They cannot modify someone else’s account via these routes.\n    \n\n---\n\n## 🚫 **What This Module Is NOT For**\n\n- Viewing another user’s profile\n    \n- Updating another user’s details\n    \n- Changing another user’s password\n    \n- Admin-level user management\n    \n\nThese actions belong to the **Users Module**, not the Account Module.\n\n---\n\n## 🛡️ **Why a Separate Account Module?**\n\nSeparating account-related operations provides:\n\n- **Better security**  \n      \n    Password updates require dedicated validation and protection.\n    \n- **Cleaner architecture**  \n      \n    User management (admin side) stays in `/users`,  \n      \n    personal account management stays in `/account`.\n    \n- **Clear boundaries**  \n      \n    Self-service changes vs. privileged changes are not mixed."
 		},
 		{
 			"name": "Settings",
@@ -575,13 +765,26 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/settings"
+						"url": {
+							"raw": "{{URL}}/settings",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"settings"
+							]
+						},
+						"description": "# 📘 **GET /settings**\n\n### **Endpoint**\n\n```\nGET /settings\n\n ```\n\n### **Purpose**\n\nReturns the current global configuration values used across the platform.  \n  \nThese values determine minimum booking nights, maximum nights, breakfast pricing, and other operational rules.\n\n### **Who Can Access**\n\n- **Super Admin (spadmin)** — ✔ Allowed\n    \n- **Admin** — ✔ Allowed\n    \n- **Regular User** — ❌ Not Allowed\n    \n\n### **What It Returns**\n\nA single settings object containing:\n\n- `minNights`\n    \n- `maxNights`\n    \n- `breakfastPrice`\n    \n\n### **Usage**\n\nThis endpoint is typically used by:\n\n- Admins adjusting pricing or booking rules\n    \n- Dashboard apps displaying system settings\n    \n- Booking logic verifying allowed nights\n    \n\n### **Response Example**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"settings\": {\n      \"minNights\": 1,\n      \"maxNights\": 7,\n      \"breakfastPrice\": 120\n    }\n  }\n}\n\n ```"
 					},
 					"response": []
 				},
@@ -590,9 +793,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -605,11 +812,21 @@
 								}
 							}
 						},
-						"url": "{{URL}}/settings"
+						"url": {
+							"raw": "{{URL}}/settings",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"settings"
+							]
+						},
+						"description": "# 🛠️ **PATCH /settings**\n\n### **Endpoint**\n\n```\nPATCH /settings\n\n ```\n\n### **Purpose**\n\nAllows privileged users to update global system settings.  \n  \nOnly fields present in the request body will be updated.\n\n### **Updatable Fields**\n\n| Field | Type | Description |\n| --- | --- | --- |\n| **minNights** | Number | Minimum nights allowed per booking |\n| **maxNights** | Number | Maximum nights allowed per booking |\n| **breakfastPrice** | Number | Price added for breakfast |\n\nMore settings may be added in future versions.\n\n---\n\n### **Who Can Update**\n\n- **Super Admin (spadmin)** — ✔ Full Access\n    \n- **Admin** — ✔ Allowed (with limited scope depending on your permissions logic)\n    \n- **Regular User** — ❌ Not Allowed\n    \n\nThis route is considered **high-impact**, as it affects all bookings and pricing logic across the system.\n\n---\n\n### **How to Use**\n\n```\nPATCH /settings\nAuthorization: Bearer <token>\nContent-Type: application/json\n\n ```\n\nBody (example of partial update):\n\n```\n{\n  \"maxNights\": 10,\n  \"breakfastPrice\": 150\n}\n\n ```\n\n---\n\n### **Expected Outcome**\n\n- Only provided fields are updated\n    \n- System returns the updated settings object\n    \n\n### **Response Example**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"settings\": {\n      \"minNights\": 1,\n      \"maxNights\": 10,\n      \"breakfastPrice\": 150\n    }\n  }\n}\n\n ```\n\n---\n\n# ⚠️ **When It Fails**\n\n- Unauthorized user tries to update settings\n    \n- Invalid values (e.g., negative numbers)\n    \n- Missing authentication token\n    \n- Attempt to update fields not allowed"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# ⚙️ **Settings Model**\n\nThe **Settings Model** represents a small but central part of the system configuration.  \n  \nIt defines global operational rules that influence how reservations, pricing, and user interactions behave across _The World Oasis_ platform.\n\nThis model is still **in the development phase**, and more fields/features are expected to be added in future versions.\n\n---\n\n# 🧩 **Current Fields**\n\nBelow are the fields currently included in the settings structure:\n\n---\n\n## 🛏️ **minNights**\n\n- **Type:** Number\n    \n- **Default:** `1`\n    \n- **Description:**  \n      \n    Determines the **minimum number of nights** a user must book when making a reservation.  \n      \n    This prevents users from booking for less than the allowed minimum stay.\n    \n\n---\n\n## 🏨 **maxNights**\n\n- **Type:** Number\n    \n- **Default:** `1`\n    \n- **Description:**  \n      \n    Specifies the **maximum number of nights** allowed per booking.  \n      \n    This helps control long-term stays and ensures availability for other guests.\n    \n\n---\n\n## 🍳 **breakfastPrice**\n\n- **Type:** Number\n    \n- **Default:** `0`\n    \n- **Description:**  \n      \n    Defines the **additional cost** of including breakfast with a booking.  \n      \n    This fee is applied per guest or per night, depending on your booking logic.\n    \n\n---\n\n# 🚧 **Development Status**\n\nThis module is currently in **active development**, and future versions may include:\n\n- Seasonal pricing\n    \n- Taxes and fees\n    \n- Service charges\n    \n- Cancellation policies\n    \n- Discounts\n    \n- Booking rules\n    \n- Dynamic configuration options\n    \n- Feature toggles\n    \n\nAdmins and Super Admins will gain more control through these upcoming settings features.\n\n---\n\n# 🔐 **Who Can Modify Settings?**\n\n- **Super Admin (spadmin):** Full access\n    \n- **Admin:** Limited access (depending on your permissions design)\n    \n- **Regular User:** No access\n    \n\nSettings updates must be handled with care because they directly affect **system-wide behavior**."
 		},
 		{
 			"name": "Bookings",
@@ -619,13 +836,26 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/bookings"
+						"url": {
+							"raw": "{{URL}}/bookings",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings"
+							]
+						},
+						"description": "# 📘 **GET /bookings — Summary**\n\n### **Endpoint**\n\n```\nGET /bookings\n\n ```\n\n### **Purpose**\n\nThis route is used to **retrieve a list of bookings**, with optional filters, sorting, and pagination.  \n  \nIt is a **data-heavy administrative endpoint** designed for dashboard views and backend management.\n\n---\n\n# 👥 **Who Can Use This Endpoint**\n\n### ✅ **Super Admin (spadmin)**\n\nFull access to all bookings, with full filtering and searching capabilities.\n\n### ⚠️ **Admin**\n\nAdmins can also access all bookings.\n\n### ❌ **Regular User**\n\nRegular users **cannot** use this route.  \n  \nThey must use `/my-bookings` instead to see **their own** bookings only.\n\n---\n\n# 🧩 **Query Parameters Available**\n\nThe endpoint supports powerful filtering, sorting, field selection, and pagination.\n\n---\n\n## 1️⃣ **Filter by Status (****`phase`****)**\n\nUse the `phase` query parameter to filter bookings by their lifecycle status.\n\n| Value | Meaning |\n| --- | --- |\n| `all` | Retrieves all bookings |\n| `checked-out` | Only bookings that have been checked out |\n| `checked-in` | Only bookings that are currently checked in |\n| `unconfirmed` | Newly created or pending bookings |\n\n### Example:\n\n```\nGET /bookings?phase=checked-in\n\n ```\n\n---\n\n## 2️⃣ **Sorting (****`sortBy`****)**\n\nAllows sorting results by date or sales total.\n\n| Value | Sort Field | Order |\n| --- | --- | --- |\n| `startDate-desc` | startDate | newest first |\n| `startDate-asc` | startDate | oldest first |\n| `totalPrice-desc` | totalSales | highest first |\n| `totalPrice-asc` | totalSales | lowest first |\n\n### Example:\n\n```\nGET /bookings?sortBy=totalPrice-desc\n\n ```\n\n---\n\n## 3️⃣ **Pagination (****`page`****,** **`limit`****)**\n\n- `page` → Which page of results to retrieve\n    \n- `limit` → How many results per page\n    \n\n(Default: `page = 1`, `limit = 10`)\n\n### Example:\n\n```\nGET /bookings?page=2&limit=20\n\n ```\n\n---\n\n## 4️⃣ **Field Selection (****`fields`****)**\n\nAllows selecting **specific fields** from the booking, user, or cabin.\n\nUseful for dashboard optimization.\n\n### Example:\n\n```\nGET /bookings?fields=userId,cabinId,startDate,totalSales\n\n ```\n\n---\n\n## 5️⃣ **Custom Filters**\n\nAny additional query parameters are interpreted as filters.  \n  \nAdmins/spadmins can filter by:\n\n- date ranges\n    \n- userId\n    \n- cabinId\n    \n- payment status\n    \n- custom values\n    \n\n### Example:\n\n```\nGET /bookings?userId=68cbb2936c7dae7b9b062399\n\n ```\n\n---\n\n# 🏷️ **Populated Fields**\n\nEach booking may return populated references for:\n\n- **userId** → basic user information\n    \n- **cabinId** → basic cabin information\n    \n\nThis makes the response ready for dashboards without requiring extra API calls.\n\n---\n\n# 💡 **Key Things to Remember**\n\n1. **Only admins and super admins** can use this route.\n    \n2. Regular users must use `/my-bookings` instead.\n    \n3. You can filter by booking status using `phase`.\n    \n4. You can sort results using `sortBy`.\n    \n5. Pagination is available via `page` and `limit`.\n    \n6. Use `fields` to return _only the columns you need_.\n    \n7. You can combine all features for advanced searching.\n    \n\n---\n\n# 🧭 **Example Combined Query**\n\n```\nGET /bookings?phase=checked-in&sortBy=startDate-desc&page=1&limit=10&fields=userId,cabinId,totalSales\n\n ```\n\nThis retrieves:\n\n- Only checked-in bookings\n    \n- Newest first\n    \n- First 10 results\n    \n- Including only selected fields\n    \n- With user and cabin populated"
 					},
 					"response": []
 				},
@@ -634,9 +864,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -655,7 +889,8 @@
 									"value": "-userId,-cabinId.created_at,-cabinId.capacity,-status"
 								}
 							]
-						}
+						},
+						"description": "# 📘 **GET /bookings/:id**\n\n### **Endpoint**\n\n```\nGET /bookings/:id\n\n ```\n\n### **Purpose**\n\nRetrieve the **full details** of a specific booking.  \n  \nThis route supports both:\n\n- **Admin/Super Admin access** → Can view _any_ booking\n    \n- **User access (self-service)** → Can view _only their own_ booking using the `/my-bookings/:id` context\n    \n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### 🔹 **Super Admin (spadmin)**\n\nFull access — can retrieve any booking by ID.\n\n### 🔹 **Admin**\n\nFull access — can retrieve any booking by ID.\n\n### 🔹 **Regular User**\n\n**Restricted access** — users can only fetch their own booking details.  \n  \nThis is enforced automatically when the route is accessed through a **\"me\"** context (e.g., `/my-bookings/:id`).\n\nUsers **cannot** view someone else’s booking.\n\n---\n\n# 🧩 **Field Selection (****`fields`** **query)**\n\nAdmins and super admins can customize which fields they want returned using the `fields` query parameter.\n\nExample:\n\n```\nGET /bookings/6904f9b6ed98751c87ee0033?fields=userId,cabinId,startDate,totalSales\n\n ```\n\nThis is useful for dashboards or partial previews.\n\n### For regular users (\"me\" context):\n\n- Sensitive fields (like other user details) are automatically removed\n    \n- Cabin metadata and internal fields are limited\n    \n- User cannot control the fields returned\n    \n- Only safe data is returned\n    \n\n---\n\n# 🧭 **How to Use**\n\n### Fetch a booking by ID:\n\n```\nGET /bookings/6904f9b6ed98751c87ee0033\nAuthorization: Bearer <token>\n\n ```\n\nAdmins/spadmins receive full details, populated with:\n\n- User details (userId)\n    \n- Cabin details (cabinId)\n    \n\nUsers receive only their own booking with:\n\n- Certain fields hidden (userId, cabin capacity, cabin creation date, status etc.)\n    \n\n---\n\n# 🔗 **Populated Data**\n\nThe response may include populated references for:\n\n- **userId** → Basic user info\n    \n- **cabinId** → Cabin details relevant to the booking\n    \n\nThis helps dashboards and management panels avoid multiple round trips.\n\n---\n\n# 💡 **Key Things to Remember**\n\n1. **Admins and Super Admins** can view **any** booking.\n    \n2. **Users can view only their own bookings** (automatic enforcement).\n    \n3. Field selection using `fields` is available to admin roles only.\n    \n4. In user context (\"me\"), the API automatically hides sensitive fields.\n    \n5. Populated fields (user and cabin info) are included depending on role and selected fields."
 					},
 					"response": []
 				},
@@ -664,13 +899,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
-						"url": "{{URL}}/bookings/69045ca9835d92574095e1ce"
+						"url": {
+							"raw": "{{URL}}/bookings/69045ca9835d92574095e1ce",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings",
+								"69045ca9835d92574095e1ce"
+							]
+						},
+						"description": "# 🧾 **Delete Booking**\n\n### **Endpoint**\n\n```\nDELETE /bookings/:id\n\n ```\n\n### **Example**\n\n```\nDELETE /bookings/69045ca9835d92574095e1ce\nAuthorization: Bearer <token>\n\n ```\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Super Admin (spadmin)**\n\nFull permission to delete any booking.\n\n### ✅ **Admin**\n\nAllowed to delete any booking.\n\n### ❌ **Regular User**\n\nUsers cannot delete bookings using this route.  \n  \nThey must use the **“me” context”** route if you provide a user-side delete (e.g. `/my-bookings/:id`).  \n  \nRegular users can only delete bookings **they created**, not someone else's.\n\n---\n\n# 🎯 **Purpose**\n\nThis route is used to:\n\n- Remove incorrect bookings\n    \n- Stay cancellations (admin-side)\n    \n- Fix duplicate or invalid reservations\n    \n- Clean up system data\n    \n\nThe deletion is **permanent**.\n\n---\n\n# 💡 **Context Behavior (“me” vs admin)**\n\nYour controller supports two behaviors:\n\n### **1️⃣ Admin/Super Admin**\n\n- Request goes through `DELETE /bookings/:id`\n    \n- Can delete **any booking**\n    \n- Uses the ID from the URL\n    \n\n### **2️⃣ “Me” Context (User-side)**\n\nIf the API is called from a route like `DELETE /my-bookings/:bookingId`:\n\n- User can only delete **their own booking**\n    \n- If user tries to delete someone else’s booking → it returns **404 Not Found**  \n      \n    (so users cannot even detect others’ booking IDs)\n    \n\nYour controller already prevents privilege violations automatically.\n\n---\n\n# 📤 **Success Response**\n\n### **Status Code:** `204 No Content`\n\nMeaning:\n\n- The booking was successfully deleted\n    \n- There is **no response body**\n    \n\nYour API returns:\n\n```\n{\n  \"status\": \"success\",\n  \"data\": null\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n### 🔸 Booking Not Found (404)\n\nReturned when:\n\n- The ID does not exist\n    \n- The booking was already deleted\n    \n- A user attempts to delete a booking that doesn't belong to them\n    \n\nResponse:\n\n```\n{\n  \"status\": \"fail\",\n  \"message\": \"Booking not found!!\"\n}\n\n ```\n\n### 🔸 Unauthorized (401)\n\nMissing or invalid token.\n\n### 🔸 Forbidden (403)\n\nIf a regular user tries to delete a booking through admin routes.\n\n---\n\n# 🧠 **Important Things to Remember**\n\n- **Admins and Super Admins** can delete **any** booking.\n    \n- **Users can only delete their own booking** (when using a “me” context route).\n    \n- Invalid IDs always return a clean **404 Not Found**.\n    \n- Response status is **204**, meaning successful permanent deletion.\n    \n- Deletion impacts records permanently — no soft delete in this module."
 					},
 					"response": []
 				},
@@ -679,9 +928,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -694,7 +947,16 @@
 								}
 							}
 						},
-						"url": "{{URL}}/bookings"
+						"url": {
+							"raw": "{{URL}}/bookings",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings"
+							]
+						},
+						"description": "# 🏨 **POST /bookings**\n\n### **Endpoint**\n\n```\nPOST /bookings\n\n ```\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Super Admin (spadmin)** — Allowed\n\n### ❌ **Admin** — Not allowed\n\n### ❌ **Regular User** — Not allowed\n\nThis route is strictly for **backend/admin panel usage**, where a Super Admin creates bookings **on behalf of users** (walk-ins, call center bookings, manual entries, corrections, etc.).\n\n---\n\n# 🎯 **Purpose**\n\nThis endpoint allows the Super Admin to manually create a booking for any customer.  \n  \nIt is useful for:\n\n- Manual reservations\n    \n- Customer support bookings\n    \n- Fixing bookings\n    \n- Creating bookings via admin dashboards\n    \n\nThis route is **not** for users booking cabins themselves.\n\n---\n\n# 📥 **Required Request Body**\n\n| Field | Type | Required | Description |\n| --- | --- | --- | --- |\n| **userId** | ObjectId | Yes | The customer for whom the booking is being created |\n| **cabinId** | ObjectId | Yes | The cabin being assigned |\n| **startDate** | Date | Yes | Check-in date |\n| **endDate** | Date | Yes | Check-out date |\n| **noOfUsers** | Number | Yes | Number of guests |\n| **breakFast** | Boolean | No | Add breakfast (extra charge) |\n| **observation** | String | No | Staff notes or special requests |\n\n> \n\n**Important:**  \n  \nPrices (`sales`, `extraSales`, `totalSales`) are **NOT sent by client** — they are calculated automatically.\n\n \n  \n\n---\n\n# 🧠 **Important Booking Rules (Automatically Enforced)**\n\nThe system automatically validates the following before saving:\n\n### ✔ Cabin must exist\n\n### ✔ User must exist and must be active\n\n### ✔ User role must be `\"user\"` (employees cannot be booked)\n\n### ✔ No date conflicts (no overlapping bookings)\n\n### ✔ noOfUsers must not exceed cabin capacity\n\n### ✔ The length of stay must follow Settings:\n\n- `minNights`\n    \n- `maxNights`\n    \n\n### ✔ Pricing is auto-calculated\n\n- Base price minus discount\n    \n- Breakfast charges (if enabled)\n    \n- Total sales amount\n    \n\n---\n\n# 📤 **Successful Response (201 Created)**\n\nThe system returns the booking with:\n\n- Selected user fields (protected, no admin fields)\n    \n- Selected cabin fields\n    \n- All calculated price fields\n    \n\nExample structure:\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"_id\": \"...\",\n    \"userId\": { ... },\n    \"cabinId\": { ... },\n    \"startDate\": \"...\",\n    \"endDate\": \"...\",\n    \"noOfUsers\": 3,\n    \"sales\": 3000,\n    \"extraSales\": 300,\n    \"totalSales\": 3300\n  }\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n- User does not exist\n    \n- Cabin does not exist\n    \n- User is inactive\n    \n- User is not a customer\n    \n- Booking overlaps an existing booking\n    \n- Guest count exceeds capacity\n    \n- Stay violates min/max nights\n    \n- Missing or invalid token\n    \n- Admin (not spadmin) tries to access this route"
 					},
 					"response": []
 				},
@@ -703,9 +965,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -718,7 +984,17 @@
 								}
 							}
 						},
-						"url": "{{URL}}/bookings/6905eba77480b3a2a7e00eda"
+						"url": {
+							"raw": "{{URL}}/bookings/6905eba77480b3a2a7e00eda",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings",
+								"6905eba77480b3a2a7e00eda"
+							]
+						},
+						"description": "# 🛠️ **PATCH /bookings/:bookingID**\n\n### **Endpoint**\n\n```\nPATCH /bookings/:bookingID\n\n ```\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Super Admin (spadmin)**\n\nFull access to update any booking.\n\n### ❌ **Admin**\n\nNot allowed.\n\n### ❌ **Regular User**\n\nNot allowed (their self-booking update is handled separately in the “me” context route).\n\nThis is strictly an **admin-panel update endpoint**, reserved for super admins only.\n\n---\n\n# 🎯 **Purpose**\n\nThis route allows the Super Admin to update specific editable fields of an existing booking.\n\nIt is used for:\n\n- Adjusting booking dates\n    \n- Updating guest count\n    \n- Changing breakfast selection\n    \n- Adding or modifying staff notes\n    \n- Fixing incorrect booking information\n    \n\nThe update is **restricted to specific safe fields**.\n\n---\n\n# 🧩 **Fields That Can Be Updated**\n\nOnly the following booking fields may be modified:\n\n| Field | Description |\n| --- | --- |\n| **userId** | Assign booking to another customer |\n| **cabinId** | Change cabin |\n| **startDate** | Update check-in date |\n| **endDate** | Update check-out date |\n| **noOfUsers** | Adjust number of guests |\n| **observation** | Modify internal notes |\n| **breakFast** | Enable/disable breakfast |\n\n> \n\n**Note:**  \n  \nPrice fields (sales, totalSales, extraSales) are recalculated automatically by the model.\n\n \n  \n\n---\n\n# 🔒 **Business Restrictions**\n\n### ❗ Cannot update a **paid** booking\n\nIf the booking is already completed, updating is forbidden.\n\nThe system returns an error:\n\n```\nBooking already completed\n\n ```\n\n### ❗ Only the allowed fields can be patched\n\nAny other fields in the body are ignored.\n\n### ❗ Booking must exist\n\nIf the provided ID is invalid or not found, the API returns 404.\n\n---\n\n# 🧭 **How to Use**\n\n```\nPATCH /bookings/69045ca9835d92574095e1ce\nAuthorization: Bearer <super-admin-token>\nContent-Type: application/json\n\n ```\n\n### Example body:\n\n```\n{\n  \"startDate\": \"2025-02-01\",\n  \"endDate\": \"2025-02-05\",\n  \"noOfUsers\": 4,\n  \"breakFast\": true\n}\n\n ```\n\n---\n\n# 📤 **Successful Response (201)**\n\nReturns the updated booking (with user and cabin populated):\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"_id\": \"...\",\n    \"startDate\": \"...\",\n    \"endDate\": \"...\",\n    \"noOfUsers\": 4,\n    \"breakFast\": true,\n    \"userId\": { ... },\n    \"cabinId\": { ... }\n  }\n}\n\n ```\n\n---\n\n# ❗ When It Fails\n\n| Scenario | Response |\n| --- | --- |\n| Booking not found | 404 |\n| Booking already paid | 403 |\n| Unauthorized role | 403 |\n| Missing auth token | 401 |\n| Invalid data | 400 |\n\n---\n\n# 🧠 **Important Things to Remember**\n\n- Only **Super Admin** can update bookings from the admin panel.\n    \n- Cannot update a **paid** (completed) booking.\n    \n- Only **specific fields** can be patched.\n    \n- User and cabin details are returned with populated data.\n    \n- Price and totals are recalculated during the save."
 					},
 					"response": []
 				},
@@ -727,13 +1003,28 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
-						"url": "{{URL}}/bookings/check-in/{{id}}"
+						"url": {
+							"raw": "{{URL}}/bookings/check-in/{{id}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings",
+								"check-in",
+								"{{id}}"
+							]
+						},
+						"description": "# 🟢 **POST /bookings/check-in/:id**\n\n### **Endpoint**\n\n```\nPOST /bookings/check-in/:id\n\n ```\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ **Admin**\n\nAllowed\n\n### ✅ **Super Admin (spadmin)**\n\nAllowed\n\n### ❌ **Regular User**\n\nNot allowed\n\nThis route is strictly an **operational action**, used by staff during guest arrival.\n\n---\n\n# 🎯 **Purpose**\n\nThis endpoint is used to **mark a booking as checked-in**, indicating that the guest has arrived at the property.\n\nThe check-in operation also **marks the booking as paid**, completing the pre-stay financial confirmation.\n\nThis is typically used by reception, property staff, or admin tools.\n\n---\n\n# 🔐 **Check-In Logic**\n\nWhen check-in is triggered:\n\n1. The system finds the booking by ID\n    \n2. If the booking does not exist → **404 Not Found**\n    \n3. If the booking is still in `\"unconfirmed\"` status:\n    \n    - `paid` is set to **true**\n        \n    - `status` becomes `\"checked in\"`\n        \n    - Booking is saved\n        \n4. If the booking is already checked-in or checked-out:\n    \n    - The system simply returns the existing booking\n        \n    - No changes are made  \n          \n        (Check-in will NOT be duplicated)\n        \n\n---\n\n# 🧭 **How to Use**\n\n```\nPOST /bookings/check-in/6904f9b6ed98751c87ee0033\nAuthorization: Bearer <admin-or-superadmin-token>\n\n ```\n\nNo request body is required.\n\n---\n\n# 📤 **Successful Response (201)**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"_id\": \"...\",\n    \"status\": \"checked in\",\n    \"paid\": true,\n    \"userId\": { ... },\n    \"cabinId\": { ... },\n    ...\n  }\n}\n\n ```\n\n- User and cabin references are populated for convenience.\n    \n\n---\n\n# ❗ **When It Fails**\n\n| Condition | Response |\n| --- | --- |\n| Booking not found | 404 |\n| Unauthorized role | 403 |\n| Missing token | 401 |\n| Invalid booking ID | 400 |\n\n---\n\n# 🧠 **Important Notes**\n\n- Check-in is an admin-side action — **users cannot check themselves in**.\n    \n- Only `\"unconfirmed\"` bookings can transition to `\"checked in\"`.\n    \n- Check-in automatically marks the booking as **paid**.\n    \n- If already checked-in or checked-out, the call is safe and simply returns the booking."
 					},
 					"response": []
 				},
@@ -742,17 +1033,33 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
-						"url": "{{URL}}/bookings/check-out/{{id}}"
+						"url": {
+							"raw": "{{URL}}/bookings/check-out/{{id}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"bookings",
+								"check-out",
+								"{{id}}"
+							]
+						},
+						"description": "# 🔵 **POST /bookings/check-out/:id**\n\n### **Endpoint**\n\n```\nPOST /bookings/check-out/:id\n\n ```\n\n---\n\n# 👥 **Who Can Use This Endpoint?**\n\n### ✅ Admin\n\n### ✅ Super Admin (spadmin)\n\n### ❌ Regular User\n\nThis is a **staff-only operational action**.\n\n---\n\n# 🎯 **Purpose**\n\nThis route is used to officially **check out a guest**, marking the end of their stay.  \n  \nIt finalizes the booking and ensures the booking is marked as **paid**.\n\n---\n\n# 🔐 **Check-Out Logic (Correct Version)**\n\n1. The booking is found using the provided ID.\n    \n2. If it does not exist → **404 Booking not found**.\n    \n3. Check-out **only happens if the booking is currently** _**checked in**_**.**\n    \n4. When the status is `\"checked in\"`:\n    \n    - `status` becomes `\"checked out\"`\n        \n    - `paid` becomes `true`\n        \n    - Booking is saved\n        \n5. If the booking is **unconfirmed** or **already checked out**,  \n    **no changes are made** — the API simply returns the existing booking.\n    \n\nThis ensures staff cannot check-out someone who never checked in.\n\n---\n\n# 🧭 **How to Use**\n\n```\nPOST /bookings/check-out/6904f9b6ed98751c87ee0033\nAuthorization: Bearer <admin-or-superadmin-token>\n\n ```\n\nThere is **no request body**.\n\n---\n\n# 📤 **Successful Response (201)**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"_id\": \"...\",\n    \"status\": \"checked out\",\n    \"paid\": true,\n    \"userId\": { ... },\n    \"cabinId\": { ... },\n    ...\n  }\n}\n\n ```\n\n- Contains populated `userId` and `cabinId`\n    \n- If the booking was NOT in `\"checked in\"` state, it simply returns the booking unchanged\n    \n\n---\n\n# ❗ When It Fails\n\n| Condition | Status Code | Description |\n| --- | --- | --- |\n| Booking not found | 404 | Invalid or deleted booking |\n| Unauthorized role | 403 | Admin or super admin only |\n| Missing token | 401 | Authentication required |\n\n---\n\n# 🧠 **Important Things to Remember**\n\n- Only **\"checked in\"** bookings can be checked out.\n    \n- Check-out marks the booking as **paid**, even if it was unpaid before.\n    \n- Admin & Super Admin can check-out any booking.\n    \n- No changes occur when:\n    \n    - Booking is still `\"unconfirmed\"`\n        \n    - Booking is already `\"checked out\"`\n        \n\nThe route remains **safe and repeatable**."
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# 🏨 **Bookings Module — Overview**\n\nThe **Bookings Module** is responsible for handling all cabin reservation activity across _The World Oasis_ platform.  \n  \nIt ensures:\n\n- Only valid users can book\n    \n- Cabin availability is enforced\n    \n- Business rules (min/max nights) are applied\n    \n- Overlapping bookings are prevented\n    \n- Pricing is calculated automatically\n    \n- Extra services (like breakfast) are billed\n    \n- Sales and totals are generated automatically\n    \n\nBookings are **validated, calculated, and processed automatically** during creation.\n\n---\n\n# 🧩 **Booking Model — Field Breakdown**\n\nEach booking consists of the following major fields:\n\n---\n\n## 👤 **userId**\n\n- **Type:** ObjectId (User reference)\n    \n- **Required:** Yes\n    \n- Represents the customer making the booking.\n    \n- User must:\n    \n    - Be a **regular user** (role = `\"user\"`)\n        \n    - Have **active** status\n        \n\nEmployees (admin/spadmin) **cannot** book cabins.\n\n---\n\n## 🏠 **cabinId**\n\n- **Type:** ObjectId (Cabin reference)\n    \n- **Required:** Yes\n    \n- Represents the cabin being reserved.\n    \n\n---\n\n## 📅 **startDate & endDate**\n\nBoth fields are **required** and represent the booking period.\n\n### Validations automatically enforced:\n\n- `endDate` must be after `startDate`\n    \n- Duration must satisfy:\n    \n    - **minNights** (from Settings)\n        \n    - **maxNights** (from Settings)\n        \n\n### Conflict Prevention\n\nBefore saving, the system checks for **bookingConflicts** ensuring:\n\n- No overlapping bookings for the same cabin\n    \n- No date clashes for the selected period\n    \n\n---\n\n## 🧑‍🤝‍🧑 **noOfUsers**\n\n- **Required**\n    \n- Must NOT exceed the cabin’s maximum **capacity**.\n    \n- If exceeded → booking is rejected.\n    \n\n---\n\n## 🧾 **status**\n\nBooking lifecycle states:\n\n| Status | Meaning |\n| --- | --- |\n| **unconfirmed** | Default, newly created |\n| **checked in** | Guest has arrived |\n| **checked out** | Guest has left |\n\nThe status flows are handled through admin routes.\n\n---\n\n## 💵 **Pricing Fields (Auto-calculated)**\n\nThese are **never provided by the client**.  \n  \nThey are computed automatically based on cabin price, discount, settings, dates, and breakfast selection:\n\n### **sales**\n\nBase cost = `(cabin.price - cabin.discount) \\* days`\n\n### **extraSales**\n\nAdditional cost for breakfast →  \n`setting.breakfastPrice \\* days`  \n_(Only if breakFast = true)_\n\n### **totalSales**\n\n`totalSales = sales + extraSales`\n\n---\n\n## 🍳 **breakFast**\n\n- Boolean\n    \n- Default: `false`\n    \n- If true → extra charges are added.\n    \n\n---\n\n## 📆 **bookedAt**\n\n- Auto-set timestamp when booking is created.\n    \n\n---\n\n## 💳 **paid**\n\n- Boolean\n    \n- Tracks whether the booking has been paid or not.\n    \n\n---\n\n## 📝 **observation**\n\n- Optional internal notes (e.g., customer requests, special instructions).\n    \n\n---\n\n## 📅 **paymentDate**\n\n- Timestamp of when payment was completed.\n    \n\n---\n\n# 🔐 **Core Validations Automatically Performed**\n\nWhen a booking is created:\n\n### 1)Check if **cabin**, **user**, and **settings** exist\n\nIf any is missing → booking fails.\n\n### 2)User must be:\n\n- Active\n    \n- Role = `\"user\"`\n    \n\nAdmins/spadmins **cannot** create bookings.\n\n### 3)Capacity check\n\nCannot exceed cabin.capacity.\n\n### 4)Nights validation (from Settings)\n\n- Must be ≥ minNights\n    \n- Must be ≤ maxNights\n    \n\n### 5)Overlapping bookings prevented\n\n`bookingConflicts(this)` ensures dates do not conflict.\n\n### 6)Automatic price calculation\n\nsales, extraSales, totalSales are computed."
 		},
 		{
 			"name": "My Bookings",
@@ -762,13 +1069,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/my-bookings/69045beb835d92574095e1ae"
+						"url": {
+							"raw": "{{URL}}/my-bookings/69045beb835d92574095e1ae",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"my-bookings",
+								"69045beb835d92574095e1ae"
+							]
+						},
+						"description": "# 📘 **GET /my-bookings/:bookingId**\n\n### **Endpoint**\n\n```\nGET /my-bookings/{bookingId}\n\n ```\n\n### **Example**\n\n```\nGET /my-bookings/69045beb835d92574095e1ae\nAuthorization: Bearer <user-token>\n\n ```\n\n---\n\n# 🎯 **Purpose**\n\nThis route allows a logged-in user to **retrieve the full details of one specific booking they created**.\n\nIt is part of the user-only booking management flow.\n\n---\n\n# 👥 **Who Can Use This Route?**\n\n### ✅ Regular User (role = \"user\")\n\nCan access _only their own bookings_.\n\n### ❌ Admin / Super Admin\n\nNot allowed — admins have a separate booking module.\n\n### ❌ Unauthenticated Users\n\nNot allowed.\n\n---\n\n# 🔐 **Ownership Protection**\n\nThe system ensures that:\n\n- The booking must belong to the **current logged-in user**\n    \n- If the booking does **not** belong to the user, the system returns:  \n    **404 Not Found** (not 403)\n    \n\nThis prevents users from detecting other users’ booking IDs.\n\nOwnership is always enforced.\n\n---\n\n# 🧩 **What This Route Returns**\n\nA booking document containing safely exposed fields, including (depending on your population rules):\n\n- Booking ID\n    \n- Cabin information\n    \n- Dates (startDate, endDate)\n    \n- Number of guests\n    \n- Breakfast selection\n    \n- Total price fields\n    \n- Status (unconfirmed / checked in / checked out)\n    \n- User details (limited and safe subset)\n    \n\nSensitive internal fields are automatically excluded.\n\n---\n\n# 🧭 **How to Use**\n\n```\nGET /my-bookings/69045beb835d92574095e1ae\nAuthorization: Bearer <token>\n\n ```\n\nNo body is required.\n\n---\n\n# 📤 **Successful Response (200)**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"booking\": {\n      \"_id\": \"69045beb835d92574095e1ae\",\n      \"cabinId\": { ... },\n      \"startDate\": \"...\",\n      \"endDate\": \"...\",\n      \"noOfUsers\": 3,\n      \"breakFast\": true,\n      \"totalSales\": 4200,\n      \"status\": \"unconfirmed\"\n    }\n  }\n}\n\n ```\n\n(Exact fields depend on your population rules.)\n\n---\n\n# ❗ When It Fails\n\n| Condition | Response |\n| --- | --- |\n| Booking does not exist | 404 |\n| Booking belongs to another user | 404 |\n| Token missing or invalid | 401 |\n| User is not role `\"user\"` | 403 |\n\n---\n\n# 🧠 **Key Points to Remember**\n\n- Users can only fetch _their own_ bookings\n    \n- Unauthorized access returns **404**, not 403\n    \n- No admin or staff access\n    \n- Ideal for user dashboard booking detail pages\n    \n- Safe-field filtering ensures privacy"
 					},
 					"response": []
 				},
@@ -777,9 +1098,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
@@ -798,7 +1123,8 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "# **GET /my-bookings**\n\n### **Endpoint**\n\n```\nGET /my-bookings\n\n ```\n\n### **Purpose**\n\nReturns a **paginated list** of bookings belonging to the logged-in user.\n\n### **Who Can Use**\n\n- ✔ Regular users\n    \n- ❌ Admin / Super Admin\n    \n- ❌ Unauthenticated users\n    \n\n### **Available Query Parameters**\n\n| Query | Description |\n| --- | --- |\n| `page` | Page number (default 1) |\n| `limit` | Results per page (default 10) |\n| `fields` | Select specific fields to include |\n| `phase` | Filter by booking status (`checked-in`, `checked-out`, `unconfirmed`) |\n| `sortBy` | Sort by date or price |\n\n### **Security**\n\nThe system automatically injects:\n\n```\nuserId = currentUser._id\n\n ```\n\nUsers **cannot** view bookings belonging to anyone else.\n\n### **Success Response (200)**\n\nReturns only the user’s bookings."
 					},
 					"response": []
 				},
@@ -807,13 +1133,27 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [],
-						"url": "{{URL}}/my-bookings/6905bff76dad17047fdb9653"
+						"url": {
+							"raw": "{{URL}}/my-bookings/6905bff76dad17047fdb9653",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"my-bookings",
+								"6905bff76dad17047fdb9653"
+							]
+						},
+						"description": "# **⚠️ /my-bookings/:bookingId**\n\n### **Endpoint**\n\n```\nDELETE /my-bookings/:bookingId\n\n ```\n\n### **Purpose**\n\nAllows the user to **cancel/delete** their own booking.\n\n### **Who Can Use**\n\n- ✔ Regular user\n    \n- ❌ Admin / Super Admin\n    \n\n### **Security**\n\n- Users can delete **only their own** bookings\n    \n- Attempting to delete someone else’s booking returns **404**, not 403\n    \n\n### **Success Response (204 No Content)**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": null\n}\n\n ```"
 					},
 					"response": []
 				},
@@ -822,9 +1162,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PATCH",
 						"header": [],
@@ -837,7 +1181,17 @@
 								}
 							}
 						},
-						"url": "{{URL}}/my-bookings/69045beb835d92574095e1ae"
+						"url": {
+							"raw": "{{URL}}/my-bookings/69045beb835d92574095e1ae",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"my-bookings",
+								"69045beb835d92574095e1ae"
+							]
+						},
+						"description": "# **⭐ /my-bookings/:bookingId — Update My Booking**\n\n### **Endpoint**\n\n```\nPATCH /my-bookings/:bookingId\n\n ```\n\n### **Purpose**\n\nAllows the user to update selected fields of **their own** booking.\n\n### **Who Can Use**\n\n- ✔ Regular user\n    \n- ❌ Admin / Super Admin\n    \n\n### **Allowed Update Fields**\n\nUsers can update only:\n\n- `cabinId`\n    \n- `startDate`\n    \n- `endDate`\n    \n- `noOfUsers`\n    \n- `breakFast`\n    \n- `observation`\n    \n\n### **Restrictions**\n\n❗ Users **cannot** update a **paid** booking  \n  \n(Already completed bookings are locked)\n\n❗ Users cannot update:\n\n- Price fields\n    \n- Status\n    \n- Any administrative fields\n    \n\n### **Security**\n\nIf the booking does not belong to the user → **404**.\n\n### **Success Response (201)**\n\nReturns the updated booking with recalculated pricing."
 					},
 					"response": []
 				},
@@ -846,9 +1200,13 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [],
@@ -861,11 +1219,22 @@
 								}
 							}
 						},
-						"url": "{{URL}}/my-bookings/"
+						"url": {
+							"raw": "{{URL}}/my-bookings/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"my-bookings",
+								""
+							]
+						},
+						"description": "# **POST /my-bookings — Create a Booking**\n\n### **Endpoint**\n\n```\nPOST /my-bookings\n\n ```\n\n### **Purpose**\n\nCreates a new booking for the logged-in user.\n\n### **Who Can Use**\n\n- ✔ Regular user\n    \n- ❌ Admin / Super Admin\n    \n\n### **Behavior**\n\n- The user **cannot** provide `userId`\n    \n- The booking is always assigned to the **existing logged-in user**\n    \n- All business rules apply (capacity, min/max nights, conflicts, pricing, active user)\n    \n\n### **Required Body Fields**\n\n| Field | Type | Description |\n| --- | --- | --- |\n| `cabinId` | ObjectId | Cabin to book |\n| `startDate` | Date | Check-in date |\n| `endDate` | Date | Check-out date |\n| `noOfUsers` | Number | Guest count |\n| `breakFast` | Boolean | Optional breakfast |\n| `observation` | String | Optional notes |\n\n### **Success Response (201)**\n\nReturns the created booking with populated cabin/user data."
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# 👤 **My Bookings Module**\n\nThe **My Bookings Module** is designed exclusively for **regular users** to manage their own reservations in a secure and isolated way.  \n  \nEverything in this module operates strictly on the **current logged-in user**, ensuring complete privacy and preventing unauthorized access to other users' bookings.\n\nThis module provides users with the ability to:\n\n- **Create** bookings for themselves\n    \n- **View** all their active and past bookings\n    \n- **Fetch** a specific booking they made\n    \n- **Modify** their own upcoming bookings\n    \n- **Cancel/Delete** their upcoming bookings\n    \n\nAll operations within this module enforce strong ownership checks, making sure:\n\n### 🔒 Users can only see and manage **their own** bookings.\n\n### 🔒 No user can access or even detect the existence of another user’s booking.\n\n### 🔒 User identity is automatically bound to every request, preventing impersonation.\n\n---\n\n# 🎯 **Key Principles of the My Bookings Module**\n\n### **1\\. User-Scoped Access Only**\n\nEvery route automatically restricts results to:\n\n```\nbookings where userId === currentUser\n\n ```\n\nThis ensures complete isolation.\n\n### **2\\. Automatic User Binding**\n\nWhen creating or modifying bookings, the system always uses the logged-in user’s ID.  \n  \nClients **cannot change or override** the userId.\n\n### **3\\. Limited Editing Permissions**\n\nUsers can update **only a safe subset of fields**, and **cannot** modify sensitive system-calculated fields like pricing or payment.\n\n### **4\\. Booking Security**\n\nIf a user tries to access a booking they don’t own:\n\n- The system responds with **404 Not Found**  \n      \n    (not 403)  \n      \n    to avoid revealing other users' booking IDs.\n    \n\n### **5\\. Different from Admin Bookings**\n\nThis module is completely separate from staff/admin booking tools.\n\n| Feature | Users | Admin/SpAdmin |\n| --- | --- | --- |\n| Create booking for self | ✔ | ❌ (admin panel uses `/bookings`) |\n| View all bookings | ❌ | ✔ |\n| Check-in / Check-out | ❌ | ✔ |\n| Modify any booking | ❌ | ✔ |\n| Modify own booking | ✔ | ❌ |\n\n---\n\n# 📦 **What This Module Contains**\n\nThe module includes user-friendly versions of:\n\n- **GET /my-bookings** — List of user’s bookings\n    \n- **POST /my-bookings** — Create a new booking\n    \n- **GET /my-bookings/{id}** — Get details of a single booking\n    \n- **PATCH /my-bookings/{id}** — Update user’s booking\n    \n- **DELETE /my-bookings/{id}** — Cancel user’s booking\n    \n\nAll of these routes enforce:\n\n- Authentication\n    \n- User role = `\"user\"`\n    \n- Strict ownership\n    \n\n---\n\n# 🧠 **Why This Module Exists**\n\nThis module exists to:\n\n- Protect user privacy\n    \n- Keep user operations separate from admin operations\n    \n- Simplify booking management for users\n    \n- Prevent misuse or manipulation of booking data\n    \n- Provide a clear, dedicated space for customers to view and manage their reservations"
 		},
 		{
 			"name": "Dashboard",
@@ -875,22 +1244,59 @@
 					"request": {
 						"auth": {
 							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/dashboard/7"
+						"url": {
+							"raw": "{{URL}}/dashboard/7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"dashboard",
+								"7"
+							]
+						},
+						"description": "# 📊 **GET /dashboard/:period**\n\n### **Endpoint**\n\n```\nGET /dashboard/:period\n\n ```\n\n### **Param**\n\n`period` → Number of past days to analyze  \n  \nExamples:\n\n- `/dashboard/7` → Last 7 days\n    \n- `/dashboard/30` → Last 30 days\n    \n- `/dashboard/90` → Last 90 days\n    \n\nThe selected period defines the date range over which all insights are calculated.\n\n---\n\n# 👥 **Who Can Access This Route?**\n\n### ✔ Admin\n\n### ✔ Super Admin (spadmin)\n\n### ✖ Regular User\n\n### ✖ Unauthenticated users\n\nDashboard insights contain sensitive business data, so only staff roles can access them.\n\n---\n\n# 🎯 **Purpose of This Endpoint**\n\nThis route provides a **complete set of dashboard analytics** in **one API call**.  \n  \nIt is specifically designed for the **Admin Dashboard**, allowing staff to quickly get all essential performance metrics without multiple requests.\n\nThe system runs a combined aggregation pipeline and returns **all insights together**, making the dashboard fast and efficient.\n\n---\n\n# 📦 **What Insights Are Included**\n\nThe response includes several calculated metrics based on the selected period.  \n  \nThe insights provided are:\n\n---\n\n### 1️⃣ **Total Bookings**\n\nNumber of bookings created in the selected period.\n\n---\n\n### 2️⃣ **Total Check-ins**\n\nCount of check-ins and the total revenue from those checked-in bookings.\n\n---\n\n### 3️⃣ **Sales by Date**\n\nDaily sales totals within the selected date range — used for charts or revenue graphs.\n\n---\n\n### 4️⃣ **Occupancy Rate**\n\nPercentage of cabin occupancy based on total available cabin nights vs booked nights.\n\n---\n\n### 5️⃣ **Duration Summary**\n\nBreakdown of stay lengths (short stays, long stays, etc.) across all bookings.\n\n---\n\n### 6️⃣ **Daily Movements**\n\nDaily operational activity, including:\n\n- Arrivals\n    \n- Departures\n    \n- Stay-overs\n    \n\nThis is useful for understanding daily traffic and guest flow.\n\n---\n\n# 🧭 **How to Use**\n\n```\nGET /dashboard/:period\nAuthorization: Bearer <admin-or-superadmin-token>\n\n ```\n\nExample:\n\n```\nGET /dashboard/30\n\n ```\n\nNo request body is required.\n\n---\n\n# 📤 **Response Format (General Structure)**\n\n```\n{\n  \"status\": \"success\",\n  \"data\": {\n    \"totalBookings\": [...],\n    \"totalCheckIns\": [...],\n    \"salesByDate\": [...],\n    \"occupancyRate\": [...],\n    \"durationSummary\": [...],\n    \"dailyMovements\": [...]\n  }\n}\n\n ```\n\nThe exact structure depends on your faceted response.\n\n---\n\n# ❗ Error Responses\n\n| Code | Cause |\n| --- | --- |\n| **401** | Missing or invalid token |\n| **403** | User is not admin/spadmin |\n| **400** | Invalid period value (not a number) |\n\n---\n\n# 🧠 **Key Notes**\n\n- All insights are calculated from **real booking data**\n    \n- The endpoint uses a **single aggregation pipeline** with multiple facets\n    \n- No need for multiple API calls — everything comes in one response\n    \n- The `period` parameter directly controls the date range\n    \n- Designed specifically for the admin dashboard and analytics feature"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "# 📊 **Dashboard Module**\n\nThe **Dashboard Module** provides real-time business insights for administrators and super administrators.  \n  \nIt aggregates booking, sales, occupancy, and operational activity into a **single API request**, giving management a clear picture of business performance over any chosen time period.\n\nThis module powers the **admin dashboard**, enabling staff to monitor:\n\n- How many bookings occurred\n    \n- How many guests checked in\n    \n- Total revenue generated\n    \n- Occupancy rate across cabins\n    \n- Booking duration breakdown\n    \n- Daily activity movements\n    \n- Sales grouped by date\n    \n\nAll of this is computed using several MongoDB aggregation pipelines and returned in one consolidated response.\n\n---\n\n# 👥 **Who Can Access the Dashboard Module?**\n\n### **✔ Super Admin (****`spadmin`****)**\n\nFull access\n\n### **✔ Admin**\n\nAccess allowed\n\n### **❌ Regular User (****`user`****)**\n\nNot allowed — the dashboard contains sensitive business insights and cannot be viewed by customers.\n\n### **❌ Unauthenticated Requests**\n\nNot allowed\n\nOnly authenticated admin roles can access this module.\n\n---\n\n# 🎯 **Purpose of the Dashboard Module**\n\nThe dashboard exists to give managers a **centralized analytics view**.  \n  \nInstead of calling multiple endpoints, the system provides **all insights at once**:\n\n- Booking performance\n    \n- Revenue insights\n    \n- Occupancy metrics\n    \n- Operational movements\n    \n- Stay duration patterns\n    \n- Check-in data\n    \n- Historical sales trends\n    \n\nThis makes it ideal for:\n\n- Admin dashboards\n    \n- Management analytics screens\n    \n- Performance monitoring pages\n    \n- Business intelligence tools\n    \n\n---\n\n# 🔄 **How the Dashboard Module Works**\n\nWhen a request is made to the dashboard route:\n\n```\nGET /dashboard/:period\n\n ```\n\nThe backend triggers a **multi-facet aggregation pipeline** that simultaneously executes all analytics queries and bundles the results into a single JSON response.\n\nThe pipeline calculates:\n\n### ✔ Daily Movements\n\nBookings starting or ending today  \n\ndaily-movements\n\n### ✔ Occupancy Rate\n\nPercentage of cabin occupancy over the given period  \n\noccupancyRate\n\n### ✔ Duration Summary\n\nDistribution of stays (2 nights, 3 nights, 4–5, 8–14, etc.)  \n\ndurationSummary\n\n### ✔ Sales by Date\n\nRevenue trends for each date in the selected period  \n\nsalesByDate\n\n### ✔ Total Bookings\n\nNumber of new bookings during the selected period  \n\ntotalBookings\n\n### ✔ Total Check-ins\n\nNumber of check-ins + total revenue for checked-in bookings  \n\ntotalCheckIns\n\nAll of these are combined using a `$facet` aggregation:  \n\naggregationPipeline\n\nThis means **one API call returns every dashboard insight**, making it fast, efficient, and ideal for a single-load dashboard UI.\n\n---\n\n# 📈 **Supported Period Values**\n\nThe `:period` parameter indicates how many **past days** should be analyzed.\n\nExample values:\n\n- `7` → last 7 days\n    \n- `30` → last 30 days\n    \n- `90` → last 90 days\n    \n- `365` → last 1 year\n    \n\nExample request:\n\n```\nGET /dashboard/30\nAuthorization: Bearer <admin-token>\n\n ```\n\n---\n\n# 🧠 **Key Characteristics of the Dashboard Module**\n\n### ✔ All insights in a single API call (via `$facet`)\n\n### ✔ Accurate date-range filtering using `startOfDay` and `subDays`\n\n### ✔ Excludes soft or canceled data—uses live booking data\n\n### ✔ Automatically considers cabin count for occupancy calculations\n\n### ✔ Sales values automatically aggregated\n\n### ✔ Suitable for charts, widgets, and admin analytics"
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/html",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
-		"type": "bearer",
-		"bearer": {}
+		"type": "bearer"
 	},
 	"event": [
 		{
