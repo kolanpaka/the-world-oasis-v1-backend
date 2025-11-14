@@ -11,8 +11,17 @@ const dashboardRouter = require("./router/dashboardRouter");
 const errorMiddleware = require("./middleware/errorMiddleware");
 const NodeError = require("./utils/nodeError");
 const home = require("./View/home");
+const cors = require("cors");
 
 const app = express();
+
+app.use(
+  cors({
+    origin: "*", // allow ALL frontends to consume your API
+    methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(express.urlencoded({ extended: true }));
 
