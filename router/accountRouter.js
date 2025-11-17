@@ -9,6 +9,8 @@ const router = express.Router();
 
 router.use(protectMiddleware);
 
+router.get("/", accountControllers.getAccount);
+
 router.patch("/", upload.single("profile"), accountControllers.updateAccount);
 
 router.patch("/update-password", accountControllers.updatePassword);
