@@ -1,7 +1,7 @@
 const Cabin = require("./../../models/cabinModel");
 const getSort = {
   "name-asc": "cabin",
-  "name-asc": "-cabin",
+  "name-desc": "-cabin",
   "regularPrice-asc": "price",
   "regularPrice-desc": "-price",
   "maxCapacity-asc": "capacity",

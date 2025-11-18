@@ -7,7 +7,8 @@ async function postCabin(req, res, next) {
   session.startTransaction();
 
   try {
-    const { cabin, capacity, price, Discount, description } = req.body;
+    const { cabin, capacity, price, Discount, description, cabin_image } =
+      req.body;
 
     const result = await Cabin.create(
       [
@@ -17,13 +18,16 @@ async function postCabin(req, res, next) {
           price,
           Discount,
           description,
-          cabin_image: "https://placehold.co/600x400",
+          cabin_image: "https://placehold.co/600x400?text=Cabin",
         },
       ],
       { session }
     );
+    let URL = cabin_image;
 
-    const URL = await uploadImage("cabinImages", req.file);
+    if (!URL) {
+      URL = await uploadImage("cabinImages", req.file);
+    }
 
     result[0].cabin_image = URL;
     await result[0].save({ session });
