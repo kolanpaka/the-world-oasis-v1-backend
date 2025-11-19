@@ -47,6 +47,7 @@ async function getBookings(req, res) {
   } = req.routerContext === "me" ? req.cstmQuery : req.query;
 
   let query = Booking.find(queryToMongo(paramQuery).criteria);
+  let totalLength = (await Booking.find()).length;
 
   const selector = populateSelector(fields, ["userId", "cabinId"], query);
   if (fields) {
@@ -68,7 +69,7 @@ async function getBookings(req, res) {
   res.status(200);
   res.json({
     status: "success",
-    totalLength: bookings.length,
+    totalLength,
     data: {
       bookings,
     },
