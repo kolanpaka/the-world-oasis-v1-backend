@@ -47,7 +47,6 @@ async function getBookings(req, res) {
   } = req.routerContext === "me" ? req.cstmQuery : req.query;
 
   let query = Booking.find(queryToMongo(paramQuery).criteria);
-  let totalLength = (await Booking.find()).length;
 
   const selector = populateSelector(fields, ["userId", "cabinId"], query);
   if (fields) {
@@ -59,6 +58,7 @@ async function getBookings(req, res) {
   if (sortBy) {
     query.sort(getSortBy[sortBy]);
   }
+  let totalLength = (await query.clone()).length;
 
   if (page) {
     query.skip((page - 1) * limit).limit(limit);
