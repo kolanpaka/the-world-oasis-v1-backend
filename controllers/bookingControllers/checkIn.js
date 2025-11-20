@@ -2,7 +2,7 @@ const Booking = require("./../../models/bookingModel");
 const NodeError = require("./../../utils/nodeError");
 
 async function checkIn(req, res) {
-  const { confirmation = false, breakFast = false } = req.body;
+  const { confirmation = false } = req.body;
   const booking = await Booking.findById(req.params.id).populate([
     "userId",
     "cabinId",
@@ -19,7 +19,6 @@ async function checkIn(req, res) {
   }
   if (booking.status === "unconfirmed") {
     booking.paid = true;
-    booking.breakFast = breakFast;
     booking.status = "checked in";
     await booking.save();
   }

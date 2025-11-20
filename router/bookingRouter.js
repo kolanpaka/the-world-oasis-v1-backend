@@ -15,6 +15,8 @@ router
   .delete(bookingControllers.deleteBooking)
   .get(bookingControllers.getBooking);
 
+router.route("/add-breakfast/:id").post(bookingControllers.addBreakFast);
+
 router.route("/check-in/:id").post(bookingControllers.checkIn);
 router.route("/check-out/:id").post(bookingControllers.checkOut);
 

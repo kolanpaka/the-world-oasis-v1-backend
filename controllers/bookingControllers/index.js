@@ -5,6 +5,7 @@ const deleteBooking = require("./deleteBooking");
 const getBooking = require("./getBooking");
 const checkIn = require("./checkIn");
 const checkOut = require("./checkOut");
+const addBreakFast = require("./addBreakFast");
 
 module.exports = {
   postBooking,
@@ -14,4 +15,5 @@ module.exports = {
   getBooking,
   checkIn,
   checkOut,
+  addBreakFast,
 };
