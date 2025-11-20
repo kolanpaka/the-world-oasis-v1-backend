@@ -2,7 +2,7 @@ const Booking = require("./../../models/bookingModel");
 const NodeError = require("./../../utils/nodeError");
 
 async function checkIn(req, res) {
-  const { confirmation, breakFast } = req.body;
+  const { confirmation = false, breakFast = false } = req.body;
   const booking = await Booking.findById(req.params.id).populate([
     "userId",
     "cabinId",
