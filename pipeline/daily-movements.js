@@ -15,6 +15,32 @@ function dailyMovemets() {
         ],
       },
     },
+    {
+      $lookup: {
+        from: "users",
+        localField: "userId",
+        foreignField: "_id",
+        as: "userData",
+      },
+    },
+    {
+      $lookup: {
+        from: "cabins",
+        localField: "cabinId",
+        foreignField: "_id",
+        as: "cabinData",
+      },
+    },
+    {
+      // convert arrays to single objects
+      $addFields: {
+        userId: { $arrayElemAt: ["$userData", 0] },
+        cabinId: { $arrayElemAt: ["$cabinData", 0] },
+      },
+    },
+    {
+      $unset: ["userData", "cabinData"],
+    },
   ];
 }
 

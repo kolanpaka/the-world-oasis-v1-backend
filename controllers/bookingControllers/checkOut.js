@@ -13,7 +13,7 @@ async function checkOut(req, res) {
   if (!confirmation) {
     throw new NodeError(
       true,
-      "Kindly confirm if you would like to proceed with the check-in.",
+      "Kindly confirm if you would like to proceed with the check-out.",
       400
     );
   }
